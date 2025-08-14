@@ -2,11 +2,10 @@
 
 Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interface Humano-Computador (CC8122) do curso de Ciencia da Computação, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
 
-Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado **Título do TCC** sob orientação do Professor **Nome do Orientador** e desenvolvido pelos seguintes alunos:
+Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETECÇÃO E IDENTIFICAÇÃO DE SOM AMBIENTE PARA AUXÍLIO DOMÉSTICO DE PESSOAS COM DEFICIÊNCIA AUDITIVA sob orientação do Professor Dr. Plinio Thomaz Aquino Junior e desenvolvido pelos seguintes alunos:
 
-- Nome Componente 1
-- Nome Componente 2
-- Nome Componente 3
+- Paulo Vinicius Araujo Feitosa 24.122.042-5
+- Guilherme Marcato Mendes Justiça 24.122.045-8
 
 ## Resumo
 
@@ -14,16 +13,48 @@ Apresente uma breve descrição da sua aplicação ou produto.
 
 ## Introdução
  
-- Apresente o propósito do produto ou serviço e quais são os principais benefícios que ele oferece aos usuários.
-- Identifique os problemas ou necessidades que o produto ou serviço resolve ou satisfaz.
-- Liste as características e funcionalidades do seu produto ou serviço de forma detalhada.
-- Liste as tecnologias e ferramentas computacionais que pretendem usar neste projeto (TCC).
-- Apresente o contexto de uso dessa aplicação. (“Usuários, tarefas, equipamentos (hardware, software e materiais) e o ambiente físico e social no qual um produto é usado.”)
+### Apresente o propósito do produto ou serviço e quais são os principais benefícios que ele oferece aos usuários.
+- Propósito: detectar e identificar sons domésticos relevantes e notificar pessoas com deficiência auditiva para aumentar segurança, independência e qualidade de vida.
+- Benefícios: notificações em tempo real (visual + vibração), redução da dependência de terceiros.
+### Identifique os problemas ou necessidades que o produto ou serviço resolve ou satisfaz.
+- Incapacidade de perceber sinais sonoros essenciais (campainha, alarmes, eletrodomésticos, choro de bebê, etc.).
+- Dependência de conviventes ouvintes ou necessidade de múltiplos indicadores visuais pela casa.
+- Falta de soluções adaptadas ao ambiente doméstico que sejam robustas a ruído e fáceis de configurar.
+  
+### Liste as características e funcionalidades do seu produto ou serviço de forma detalhada.
+- Captação de áudio com microfone I2S (Adafruit SPH0645LM4H).
+- Pré-processamento local: reamostragem para 16 kHz, normalização (float32 entre -1 e 1).
+- Extração de espectrograma Mel (janelas de 25 ms, hop de 10 ms) para entrada do classificador.
+- Classificação com YAMNet (521 classes pré-treinadas); retorna embeddings, scores e espectrograma (necessários para a classificação do som).
+- Filtragem por lista de classes relevantes e limiar de confiança (ex.: 0,70) para evitar falsos positivos.
+- Envio do evento (JSON: user_id, tipo de som, timestamp, hardware_id) ao Firebase Realtime Database via biblioteca firebase_admin.
+- Notificação ao usuário via Firebase Cloud Messaging (token FCM), com alertas visuais e vibratórios no app Flutter.
+- Emparelhamento/configuração inicial via BLE (BlueZ + Bluezero na Raspberry Pi; flutterblueplus no app).
+- Histórico de eventos de sons relevantes no aplicativo.
+  
+### Liste as tecnologias e ferramentas computacionais que pretendem usar neste projeto (TCC).
+- Hardware: Raspberry Pi 4 Model B (8 GB) com microfone Adafruit I2S MEMS SPH0645LM4H.
+- Bibliotecas e frameworks: sounddevice (captura de áudio), NumPy (arrays), TensorFlow / YAMNet (classificação do som), TensorFlow Lite (se otimizar para embarcado), firebase_admin, Firebase Realtime Database, Firebase Cloud Messaging (FCM).
+- Conectividade: Wi-Fi, BLE, flutterblueplus (aplicativo no celular).
+- Mobile: Flutter (Dart) para o aplicativo multiplataforma.
+- Ferramentas para UX/validação: Google Forms para pesquisa de campo, com deficientes auditivos como entrevistados.
+  
+### Apresente o contexto de uso dessa aplicação. (“Usuários, tarefas, equipamentos (hardware, software e materiais) e o ambiente físico e social no qual um produto é usado.”)
+- Usuários: pessoas com deficiência auditiva (diversos graus), preferencialmente que possuam smartphone Android/iOS. Também cuidadores/familiar e instituições (Exemplo: residências assistidas).
+- Tarefas: detectar eventos sonoros importantes, enviar notificações, revisar histórico, configurar/parear dispositivos e indicar sons relevantes.
+- Equipamentos: Raspberry Pi + microfone em pontos estratégicos da casa; roteador Wi-Fi doméstico; smartphone com app Flutter; possivelmente múltiplas placas para cobrir ambientes.
+-  Ambiente físico/social: residências (salas, cozinhas, quartos); ruído ambiental variável; usuários com diferentes níveis de familiaridade tecnológica. Sistema projetado para operação local com sincronização na nuvem (Firebase) para notificações em tempo real
 
 ## Publico Alvo
 
-- Determine qual o grupo específico de pessoas ou organizações para as quais este produto ou serviço é direcionado.
-- Descreva as caracteristicas demográficas, comportamentais, psicográficas ou geográficas deste público alvo que o torna mais propenso a se interessar pelo que está sendo oferecido neste projeto ou serviço.
+### Determine qual o grupo específico de pessoas ou organizações para as quais este produto ou serviço é direcionado.
+- Pessoas com deficiência auditiva que vivem em ambientes domésticos e buscam maior autonomia e segurança; também cuidadores/familiares e pequenos serviços de assistência domiciliar.
+  
+### Descreva as caracteristicas demográficas, comportamentais, psicográficas ou geográficas deste público alvo que o torna mais propenso a se interessar pelo que está sendo oferecido neste projeto ou serviço.
+- Demográficas: adultos e idosos com perdas auditivas (qualquer grau), residentes em áreas com acesso a Internet/Wi-Fi (necessário para notificações).
+- Comportamentais: usuários que usam smartphone regularmente, valorizam independência, e preferem soluções tecnológicas assistivas.
+- Psicográficas: preocupados com segurança doméstica; buscam privacidade e autonomia; aberto a novas tecnologias se simples de usar.
+- Geográficas: inicialmente foco em áreas urbanas/suburbanas com infraestrutura de Internet; o projeto é de baixo custo e escalável para outras regiões.
 
 ## Análise de concorrência
 
