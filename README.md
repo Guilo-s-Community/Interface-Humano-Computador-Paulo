@@ -48,7 +48,7 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Publico Alvo
 
 ### Determine qual o grupo específico de pessoas ou organizações para as quais este produto ou serviço é direcionado.
-- Pessoas com deficiência auditiva que vivem em ambientes domésticos e buscam maior autonomia e segurança; também cuidadores/familiares e pequenos serviços de assistência domiciliar.
+- Pessoas com deficiência auditiva que vivem em ambientes domésticos e buscam maior autonomia e segurança; também cuidadores/familiares.
   
 ### Descreva as caracteristicas demográficas, comportamentais, psicográficas ou geográficas deste público alvo que o torna mais propenso a se interessar pelo que está sendo oferecido neste projeto ou serviço.
 - Demográficas: adultos e idosos com perdas auditivas (qualquer grau), residentes em áreas com acesso a Internet/Wi-Fi (necessário para notificações).
