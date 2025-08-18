@@ -51,7 +51,7 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 - Pessoas com deficiência auditiva que vivem em ambientes domésticos e buscam maior autonomia e segurança; também cuidadores/familiares.
   
 ### Descreva as caracteristicas demográficas, comportamentais, psicográficas ou geográficas deste público alvo que o torna mais propenso a se interessar pelo que está sendo oferecido neste projeto ou serviço.
-- Demográficas: adultos e idosos com perdas auditivas (qualquer grau), residentes em áreas com acesso a Internet/Wi-Fi (necessário para notificações).
+- Demográficas: adultos, adolescentes e idosos com perdas auditivas (qualquer grau), residentes em áreas com acesso a Internet/Wi-Fi (necessário para notificações).
 - Comportamentais: usuários que usam smartphone regularmente, valorizam independência, e preferem soluções tecnológicas assistivas.
 - Psicográficas: preocupados com segurança doméstica; buscam privacidade e autonomia; aberto a novas tecnologias se simples de usar.
 - Geográficas: inicialmente foco em áreas urbanas/suburbanas com infraestrutura de Internet; o projeto é de baixo custo e escalável para outras regiões.
@@ -69,26 +69,38 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 9. Extraia pontos positivos e faça recomendações.
 
 ### Personas
+**Persona primaira (Maria, 58 anos):**
+- Perfil: mulher, perda auditiva moderada a severa, mora sozinha em apartamento urbano, aposentada. Usa celular- para mensagens e redes sociais, tem familiar que a visita semanalmente.
+- Contexto socioeconômico e cultural: renda média-baixa (aposentadoria), ensino médio completo, prefere soluções de baixo custo e fáceis de usar; valoriza privacidade e autonomia.
+- Tecnologia / habilidades: usa smartphone, mas não gosta de configurações técnicas complexas; aceita ajuda de familiares para instalar algo pela primeira vez.
+- Necessidades e expectativas: perceber campainha, alarmes, temporizadores de cozinha e choro de bebê/animal (se houver visitas); receber notificações claras (visual e vibratória).
 
-- Descreva as personas que irão interagir com a aplicação ou produto. Deixe claro suas principais caracteristicas e contextos sociais, econômicos e culturais.
-- Quais informações sobre o usuário o serviço ou poduto deve guardar?
+ **Persona secundária (Lucas, 34 anos):** 
+- Perfil: universitário/trabalhador com pouco tempo livre; mora perto e visita/ajuda a mãe; possui smartphone e bom conhecimento técnico.
+- Contexto socioeconômico e cultural: renda média, mora em área urbana; sensível a segurança da mãe e disposto a pagar por serviços que aumentem autonomia dela.
+- Tecnologia / habilidades: confortável com apps, consegue emparelhar dispositivos via Bluetooth e resolver problemas simples remotamente (p.ex. reiniciar Raspberry Pi).
+- Expectativas: receber notificações secundárias (se a mãe não responder) e poder consultar histórico; configurações remotas básicas.
 
-  - Persona primaira ...
-  - Persona secundária ...
-  - Outras personas ...
+### Quais informações sobre o usuário o serviço/produto deve guardar
+- Dados Pessoais e Conta: Nome, telefone, e-mail (para cadastro/auth no Firebase Authentication). 
+- Dispositivos: ID(s) da(s) Raspberry Pi, MAC BLE identificador, localização lógica (ex.: “Sala”, “Cozinha”), firmware/version. 
+Preferências e configurações: Lista de classes sonoras relevantes (ex.: campainha, alarme incêndio, choro de bebê, micro-ondas), limiar de confiança personalizado, modos “silencioso/sem alertas” por horário, contatos de emergência, vibração/visual padrão. 
+- Credenciais / Notificação: Token FCM do dispositivo móvel, permissões, histórico de login (para segurança).
+- Histórico de eventos: Eventos detectados (timestamp, tipo de som, score do modelo, dispositivo origem, ocupantes marcados como “respondido”/“ignorado”), gravações ou trechos (se usuário permitir). 
+- Dados de ambiente / calibragem: Perfil acústico da residência (nível de ruído médio, janelas com ruído), amostras/enriquecimento de treino local (se o usuário gravar exemplos), preferências de sensibilidade por cômodo.
+- Consentimento / privacidade: Consentimento para armazenamento de gravações, política de retenção de dados (p.ex. excluir gravações brutas após X dias), compartilhamento com cuidadores.
 
 ### Mapa de empatia
 
 ![Mapa de empatia](empatia.png)
 
-- Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária.
-  - O que o usuário vê: aqui estamos falando do ambiente visual em que o usuário se encontra. Ou seja, o que ele efetivamente enxerga, as pessoas e objetos que estão ao seu redor. Isso ajuda a entender o contexto em que o usuário está inserido e as influências visuais que está recebendo.
-  - O que o usuário ouve: neste quadrante, buscamos entender o que o usuário está ouvindo, os sons que o cercam e como eles influenciam suas ações.
-  - O que o usuário diz e faz: aqui consideramos ações e comportamentos que o usuário apresenta durante sua interação com serviço ou poduto.
-  - O que o usuário pensa e sente: neste quadrante, buscamos entender os pensamentos, sentimentos, emoções e percepções que o usuário tem em relação ao serviço ou poduto. Quais expectativas o usuário cria sobre o serviço ou poduto?
-  Que tipo de serviço ou poduto mais agrada essa persona?
-  - Dores: quando falamos sobre dores do usuário, estamos fazendo referência a quaisquer obstáculos, necessidades ou frustrações que o usuário possa experimentar ao tentar realizar uma tarefa ou alcançar um objetivo. Isso inclui, por exemplo, problemas de usabilidade, dificuldades de acesso ou outros desafios que podem afetar a experiência do usuário.
-  - Ganhos: nesse caso estamos falando de quaisquer benefícios ou recompensas que o usuário possa experimentar ao utilizar o serviço ou poduto. Isso pode incluir economia de tempo ou facilidade de uso, por exemplo. Que desejos do usuário o serviço ou poduto satisfaz?
+- Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária. (Maria, persona primária)
+  - O que o usuário vê: Sala de estar com TV (às vezes desligada), cozinhas com micro-ondas, campainha externa visível pela porta, familiares entrando às vezes; smartphone com ícones grandes.
+  - O que o usuário ouve: (pouco) percebe vibrações do celular se estiver por perto; costuma não ouvir campainha ou alarmes à distância; ruídos ambientes (trânsito, vizinhos) podem confundir sua percepção. (documento destaca ambientes ruidosos como desafio).
+  - O que o usuário diz e faz: Diz que não quer depender sempre de vizinhos; configura preferências básicas no app (com ajuda); tende a manter app aberto na tela principal quando espera visitas.
+  - O que o usuário pensa e sente: Deseja segurança e privacidade; teme perder alertas importantes e ser um incômodo para os outros; quer controlar o que é notificado (não quer spam).
+  - Dores: Falsos positivos/alertas inúteis; configurações difíceis; medo de exposição (gravações indo para nuvem sem controle).
+  - Ganhos: Receber alerta visual + vibração imediato quando algo crítico ocorre; fácil configuração inicial; histórico acessível para revisar quem bateu à porta; maior autonomia.
 
 ## Contexto de uso
 
