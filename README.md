@@ -58,33 +58,41 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 
 ## Análise de concorrência
 
-1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.
+**1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.**
    - Normalmente usuários tentam criar a própria solução com campainhas inteligentes, que enviam notificação ao celular quando for acionada (somente ao exemplo da campainha), porém não são projetados com acessibilidade para surdos;
    - Aplicativos móveis de detecção sonora personalizáveis (ex.: trabalhos acadêmicos como Bragg et al., 2016 — app treinável pelo usuário).
    
-2. Colete informações sobre os concorrentes selecionados.
+**2. Colete informações sobre os concorrentes selecionados.**
    - Jain et al. (2019): estudo de necessidades e protótipos; destaca preferências, problemas de privacidade e necessidade de personalização;
    - Bragg et al. (2016): app personalizável treinado pelo usuário; limitações em ruído de ambiente e quando o celular está guardado.
-3. Analise as características e funcionalidades dos concorrentes.
+     
+**3. Analise as características e funcionalidades dos concorrentes.**
    - Hardware + cloud: melhor captação e cobertura (sensores dedicados), porém custo e necessidade de configuração/emparelhamento;
    - Apps treináveis: forte personalização (o usuário registra sons), mas geralmente rodam no smartphone → limitações de captura/ruído e consumo de bateria.
-4. Avalie a experiência do usuário (UX).
+
+**4. Avalie a experiência do usuário (UX).**
    - Pontos fracos documentados: dependência do usuário para gravar sons, usabilidade em ambientes com áudio variável, dificuldade quando o celular está no bolso, e configuração inicial pouco clara;
    - Boas práticas sugeridas: interfaces simples, feedback visual claro, personalização, controle de privacidade e fácil emparelhamento (como por exemplo, Bluetooth).
-5. Examine os preços e modelos de negócio.
-    - variação de R$60,00 até R$300,00 para campainhas inteligentes. Porém sem a acessibilidade que o deficiente auditivo necessita. 
-6. Pesquisa de satisfação do cliente e opiniões.
-    - Dos produtos de criação acadêmica é citado limitações de estudos anteriores baseadas em número reduzido de participantes e aponta necessidade de mais testes de usabilidade (Jain et al., 2019);
-    - Para o projeto em questão, foi realizado uma pesquisa com 7 participantes para levantar necessidades — indica interesse em monitoramento de campainha, timers, alarmes e choro de bebê.
-7. Identifique padrões e tendências no mercado.
+
+**5. Examine os preços e modelos de negócio.**
+   - Variação de R$60,00 até R$300,00 para campainhas inteligentes. Porém sem a acessibilidade que o deficiente auditivo necessita. 
+
+**6. Pesquisa de satisfação do cliente e opiniões.**
+   - Dos produtos de criação acadêmica é citado limitações de estudos anteriores baseadas em número reduzido de participantes e aponta necessidade de mais testes de usabilidade (Jain et al., 2019);
+   - Para o projeto em questão, foi realizado uma pesquisa com 7 participantes para levantar necessidades — indica interesse em monitoramento de campainha, timers, alarmes e choro de bebê.
+
+**7. Identifique padrões e tendências no mercado.**
    - Tendência para modelos específicos de "objetos inteligentes", como campainha inteligente, ou fechadura inteligente
-8. Elabore relatórios e sumarize os resultados.
+
+**8. Elabore relatórios e sumarize os resultados.**
    - Apps puramente móveis: alto poder de personalização, baixa robustez em captação.
    - Hardware dedicado + ML (como a proposta): melhor captação e latência; maior necessidade de configuração inicial.
    - Uso de YAMNet e filtragem por limiar reduz falsos positivos, mas requer validação extensiva em ambientes reais.
-9. Extraia pontos positivos e faça recomendações.
+
+**9. Extraia pontos positivos e faça recomendações.**
    - Pontos positivos da proposta (comparados aos concorrentes): processamento local (latência <1 s), uso de YAMNet (ampla gama de classes), integração com Flutter + Firebase (notificações confiáveis), emparelhamento via BLE para facilitar configuração.
    - Personalização fácil; Proteção de privacidade; Robustez a ruído; e Foco em UX de configuração.
+     
 ### Personas
 **Persona primaira (Maria, 58 anos):**
 - Perfil: mulher, perda auditiva moderada a severa, mora sozinha em apartamento urbano, aposentada. Usa celular- para mensagens e redes sociais, tem familiar que a visita semanalmente.
