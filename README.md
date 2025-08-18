@@ -59,15 +59,32 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Análise de concorrência
 
 1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.
+   - Normalmente usuários tentam criar a própria solução com campainhas inteligentes, que enviam notificação ao celular quando for acionada (somente ao exemplo da campainha), porém não são projetados com acessibilidade para surdos;
+   - Aplicativos móveis de detecção sonora personalizáveis (ex.: trabalhos acadêmicos como Bragg et al., 2016 — app treinável pelo usuário).
+   
 2. Colete informações sobre os concorrentes selecionados.
+   - Jain et al. (2019): estudo de necessidades e protótipos; destaca preferências, problemas de privacidade e necessidade de personalização;
+   - Bragg et al. (2016): app personalizável treinado pelo usuário; limitações em ruído de ambiente e quando o celular está guardado.
 3. Analise as características e funcionalidades dos concorrentes.
+   - Hardware + cloud: melhor captação e cobertura (sensores dedicados), porém custo e necessidade de configuração/emparelhamento;
+   - Apps treináveis: forte personalização (o usuário registra sons), mas geralmente rodam no smartphone → limitações de captura/ruído e consumo de bateria.
 4. Avalie a experiência do usuário (UX).
+   - Pontos fracos documentados: dependência do usuário para gravar sons, usabilidade em ambientes com áudio variável, dificuldade quando o celular está no bolso, e configuração inicial pouco clara;
+   - Boas práticas sugeridas: interfaces simples, feedback visual claro, personalização, controle de privacidade e fácil emparelhamento (como por exemplo, Bluetooth).
 5. Examine os preços e modelos de negócio.
+    - variação de R$60,00 até R$300,00 para campainhas inteligentes. Porém sem a acessibilidade que o deficiente auditivo necessita. 
 6. Pesquisa de satisfação do cliente e opiniões.
+    - Dos produtos de criação acadêmica é citado limitações de estudos anteriores baseadas em número reduzido de participantes e aponta necessidade de mais testes de usabilidade (Jain et al., 2019);
+    - Para o projeto em questão, foi realizado uma pesquisa com 7 participantes para levantar necessidades — indica interesse em monitoramento de campainha, timers, alarmes e choro de bebê.
 7. Identifique padrões e tendências no mercado.
+   - Tendência para modelos específicos de "objetos inteligentes", como campainha inteligente, ou fechadura inteligente
 8. Elabore relatórios e sumarize os resultados.
+   - Apps puramente móveis: alto poder de personalização, baixa robustez em captação.
+   - Hardware dedicado + ML (como a proposta): melhor captação e latência; maior necessidade de configuração inicial.
+   - Uso de YAMNet e filtragem por limiar reduz falsos positivos, mas requer validação extensiva em ambientes reais.
 9. Extraia pontos positivos e faça recomendações.
-
+   - Pontos positivos da proposta (comparados aos concorrentes): processamento local (latência <1 s), uso de YAMNet (ampla gama de classes), integração com Flutter + Firebase (notificações confiáveis), emparelhamento via BLE para facilitar configuração.
+   - Personalização fácil; Proteção de privacidade; Robustez a ruído; e Foco em UX de configuração.
 ### Personas
 **Persona primaira (Maria, 58 anos):**
 - Perfil: mulher, perda auditiva moderada a severa, mora sozinha em apartamento urbano, aposentada. Usa celular- para mensagens e redes sociais, tem familiar que a visita semanalmente.
@@ -94,20 +111,30 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 
 ![Mapa de empatia](empatia.png)
 
-- Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária. (Maria, persona primária)
-  - O que o usuário vê: Sala de estar com TV (às vezes desligada), cozinhas com micro-ondas, campainha externa visível pela porta, familiares entrando às vezes; smartphone com ícones grandes.
-  - O que o usuário ouve: (pouco) percebe vibrações do celular se estiver por perto; costuma não ouvir campainha ou alarmes à distância; ruídos ambientes (trânsito, vizinhos) podem confundir sua percepção. (documento destaca ambientes ruidosos como desafio).
-  - O que o usuário diz e faz: Diz que não quer depender sempre de vizinhos; configura preferências básicas no app (com ajuda); tende a manter app aberto na tela principal quando espera visitas.
-  - O que o usuário pensa e sente: Deseja segurança e privacidade; teme perder alertas importantes e ser um incômodo para os outros; quer controlar o que é notificado (não quer spam).
-  - Dores: Falsos positivos/alertas inúteis; configurações difíceis; medo de exposição (gravações indo para nuvem sem controle).
-  - Ganhos: Receber alerta visual + vibração imediato quando algo crítico ocorre; fácil configuração inicial; histórico acessível para revisar quem bateu à porta; maior autonomia.
-
+- Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária.
+**(Maria, persona primária):**
+  - **O que o usuário vê:** Sala de estar com TV (às vezes desligada), cozinhas com micro-ondas, campainha externa visível pela porta, familiares entrando às vezes; smartphone com ícones grandes.
+  - **O que o usuário ouve:** (pouco) percebe vibrações do celular se estiver por perto; costuma não ouvir campainha ou alarmes à distância; ruídos ambientes (trânsito, vizinhos) podem confundir sua percepção. (documento destaca ambientes ruidosos como desafio).
+  - **O que o usuário diz e faz:** Diz que não quer depender sempre de vizinhos; configura preferências básicas no app (com ajuda); tende a manter app aberto na tela principal quando espera visitas.
+  - **O que o usuário pensa e sente:** Deseja segurança e privacidade; teme perder alertas importantes e ser um incômodo para os outros; quer controlar o que é notificado (não quer spam).
+  - **Dores:** Falsos positivos/alertas inúteis; configurações difíceis; medo de exposição (gravações indo para nuvem sem controle).
+  - **Ganhos:** Receber alerta visual + vibração imediato quando algo crítico ocorre; fácil configuração inicial; histórico acessível para revisar quem bateu à porta; maior autonomia.
+**(Lucas, persona secundária):**
+- **O que o usuário vê:** Painel do app com listagem de eventos, notificações não-lidas, status do dispositivo (online/offline).
+  - **O que o usuário ouve:** Notificações push do sistema; se perto, sons do ambiente da residência durante visitas; logs de áudio se permitidos.
+  - **O que o usuário diz e faz:** Configura limiares, pareia novo dispositivo, verifica logs, aciona contatos em caso de evento crítico; pode definir modos “ausente” ou “em visita”.
+  - **O que o usuário pensa e sente:** Quer confiabilidade e mínimo de manutenção; prefere soluções que não gerem “alarme falso” nem muita intervenção manual.
+  - **Dores:** Sistema offline ou notificação perdida; configuração inicial complexa; múltiplos dispositivos a gerir em diferentes residências.
+  - **Ganhos:** Tranquilidade ao saber que a mãe será alertada; histórico para prova/registro; controle remoto de configurações se necessário.
 ## Contexto de uso
 
-- Descreva o ambiente em que o serviço ou poduto deve ser utilizado.
-- Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?
-- Quais informações sobre o ambiente, o serviço ou poduto deve guardar antes de iniciar a interação?
-- O que normalmente deve estar acontecendo com o ambiente quando o usuário interagir com o serviço ou poduto?
+- **Descreva o ambiente em que o serviço ou poduto deve ser utilizado:** Casas e apartamentos: múltiplos cômodos, diferentes níveis de ruído (cozinha, sala com TV, áreas externas com tráfego).
+  
+- **Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?** No contexto social, usuários podem morar sozinhos, com familiares ouvintes, ou em residências assistidas. Deve suportar multiusuário (primário + contatos de confiança). A sensibilidade cultural exige respeito à privacidade — gravações não devem ser enviadas sem consentimento. No contexto econônico, solução pensada para baixo custo (Raspberry Pi + microfone); possibilidade de versões com/sem assinatura para serviços na nuvem.
+  
+- **Quais informações sobre o ambiente, o serviço ou poduto deve guardar antes de iniciar a interação?** Local do dispositivo (rótulo: “Cozinha”), perfil acústico inicial (medição de ruído ambiente), preferências de alerta do usuário, contato(s) de emergência, token FCM, consentimento de gravação, lista de classes de som relevantes ativas.
+  
+- **O que normalmente deve estar acontecendo com o ambiente quando o usuário interagir com o serviço ou poduto?** Dispositivo ligado e conectado (Wi-Fi), microfone em posição fixa, app do usuário com permissão de notificações ativo (ou com permissão para receber alerts via FCM), energia estável (ou bateria/reserva), rotina diária normal (TV, conversas ocasionais). Sistema deve tolerar variações (ruído alto, janelas abertas).
 
 ## Jornada do usuário
 
