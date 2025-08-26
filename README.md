@@ -120,6 +120,7 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 ![Mapa de empatia](empatia.png)
 
 - Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária.
+- 
 **(Maria, persona primária):**
   - **O que o usuário vê:** Sala de estar com TV (às vezes desligada), cozinhas com micro-ondas, campainha externa visível pela porta, familiares entrando às vezes; smartphone com ícones grandes.
   - **O que o usuário ouve:** (pouco) percebe vibrações do celular se estiver por perto; costuma não ouvir campainha ou alarmes à distância; ruídos ambientes (trânsito, vizinhos) podem confundir sua percepção. (documento destaca ambientes ruidosos como desafio).
@@ -127,6 +128,7 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
   - **O que o usuário pensa e sente:** Deseja segurança e privacidade; teme perder alertas importantes e ser um incômodo para os outros; quer controlar o que é notificado (não quer spam).
   - **Dores:** Falsos positivos/alertas inúteis; configurações difíceis; medo de exposição (gravações indo para nuvem sem controle).
   - **Ganhos:** Receber alerta visual + vibração imediato quando algo crítico ocorre; fácil configuração inicial; histórico acessível para revisar quem bateu à porta; maior autonomia.
+  - 
 **(Lucas, persona secundária):**
 - **O que o usuário vê:** Painel do app com listagem de eventos, notificações não-lidas, status do dispositivo (online/offline).
   - **O que o usuário ouve:** Notificações push do sistema; se perto, sons do ambiente da residência durante visitas; logs de áudio se permitidos.
