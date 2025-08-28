@@ -5,7 +5,7 @@ Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), 
 Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETECÇÃO E IDENTIFICAÇÃO DE SOM AMBIENTE PARA AUXÍLIO DOMÉSTICO DE PESSOAS COM DEFICIÊNCIA AUDITIVA sob orientação do Professor Dr. Plinio Thomaz Aquino Junior e desenvolvido pelos seguintes alunos:
 
 - Paulo Vinicius Araujo Feitosa 24.122.042-5
-- Guilherme Marcato Mendes Justiça 24.122.045-8
+- Guilherme Marcato Mendes Justiça 22.225.030-0
 
 ## Resumo
 
