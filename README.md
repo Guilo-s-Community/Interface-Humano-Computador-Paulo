@@ -148,16 +148,25 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 
 ## Jornada do usuário
 
-- Criar uma narrativa para o o seu serviço ou poduto com o usuário.
-- Determine o que o usuário realiza desde a primeira até o última interação com o serviço ou poduto.
-  - Descreva o que acontece ou pode acontecer passo a passo
-  - Como a tarefa começa? Como a tarefa se desenvolve? Como a tarefa termina?
+- Criar uma narrativa para o o seu serviço ou produto com o usuário.
+  - Sou uma pessoa com deficiência auditiva e quero ser avisada, no meu celular, quando acontecerem sons importantes em casa (campainha, alarme, bebê chorando, etc.). Compro/recebo a Raspberry Pi com o microfone I2S já preparado. Abro o app móvel, faço meu cadastro e pareio a Raspberry com o app via Bluetooth. O app envia para a placa o Wi-Fi da minha casa e vincula meu usuário. A partir daí, a Raspberry fica “ouvindo” o ambiente  para reconhecer o tipo de som. Quando algo relevante acontece, a placa registra e dispara uma notificação push para o meu celular, com vibração e alerta visual, dizendo o que foi detectado, quando e onde. Se eu quiser, abro o histórico no app e vejo detalhes do evento e do meu hardware.
 
+- Determine o que o usuário realiza desde a primeira até o última interação com o serviço ou produto.
+  - Instalo o app e crio a conta no aplicativo, informo nome, telefone e senha. A conta é criada e vinculada ao meu usuário;
+  - Ligo a Raspberry Pi e abro o app para conectar;
+  - A Raspberry Pi 4 com microfone inicializa o BlueZ e entra em modo de pareamento Bluetooth; o app procura dispositivos próximos;
+  - Envio credenciais e vinculação. No app, escolho minha Raspberry; o app envia SSID/senha do Wi-Fi e meu ID de usuário. A Raspberry armazena as credenciais, conecta-se ao Wi-Fi e registra-se no banco, concluindo o vínculo com a minha conta;
+  - Habilito notificações push. O app obtém um token e o salva no banco, para que futuras detecções cheguem ao meu celular mesmo com o app fechado.
+  - Captação e pré-processamento local. O microfone envia o áudio para a Raspberry.
+  - A Raspverry faz o processamento necessário para identificar o áudio captado pelo microfone, e se é um som importante para mim.
+  - Registro no banco e disparo da notificação. Ao detectar um evento válido, a Raspberry grava o som, guarda as informações no Banco de Dados e manda para disparar a notificação push imediata.
+  - Recebo o alerta no celular. No celular, a notificação vibratória e visual informa tipo de som, horário e local. Toco para abrir o app e posso ver histórico e informações do hardware (telas previstas no protótipo).
+  - Ação e confirmação. Depois de avisado, tomo a ação necessária (atender a porta, verificar o bebê, checar o alarme). No app, o evento fica registrado para consulta posterior, apoiando avaliações de usabilidade e confiabilidade do sistema.
 
 <!--
 ## Análise de concorrência
 
-- Pesquise serviços ou podutos existentes atualmente que possam realizar o objetivo deste projeto.
+- Pesquise serviços ou produtos existentes atualmente que possam realizar o objetivo deste projeto.
 - Selecione pelo menos 3 serviços ou podutos diferentes.
 - Em relação aos concorrentes, respondam as seguintes perguntas?
   - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
