@@ -59,30 +59,33 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Análise de concorrência
 
 **1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.**
-   - Normalmente usuários tentam criar a própria solução com campainhas inteligentes, que enviam notificação ao celular quando for acionada (somente ao exemplo da campainha), porém não são projetados com acessibilidade para surdos;
-   - Aplicativos móveis de detecção sonora personalizáveis (ex.: trabalhos acadêmicos como Bragg et al., 2016 — app treinável pelo usuário).
+   - Positivo Casa Inteligente
+   - Amazon Alexa
+   - Start Life
+   - LG Thinq
+   - Philips Hue
+   - Tuya
    
 **2. Colete informações sobre os concorrentes selecionados.**
-   - Jain et al. (2019): estudo de necessidades e protótipos; destaca preferências, problemas de privacidade e necessidade de personalização;
-   - Bragg et al. (2016): app personalizável treinado pelo usuário; limitações em ruído de ambiente e quando o celular está guardado.
+   - Todos estão envolvidos no contexto de IoT, conectividade com hardware, software e ambiente, maioria possuem as mesmas características padrões do mercado e funcionalidades parecidas para cada tipo de dispositivo.
      
 **3. Analise as características e funcionalidades dos concorrentes.**
    - Hardware + cloud: melhor captação e cobertura (sensores dedicados), porém custo e necessidade de configuração/emparelhamento;
    - Apps treináveis: forte personalização (o usuário registra sons), mas geralmente rodam no smartphone → limitações de captura/ruído e consumo de bateria.
 
 **4. Avalie a experiência do usuário (UX).**
-   - Pontos fracos documentados: dependência do usuário para gravar sons, usabilidade em ambientes com áudio variável, dificuldade quando o celular está no bolso, e configuração inicial pouco clara;
-   - Boas práticas sugeridas: interfaces simples, feedback visual claro, personalização, controle de privacidade e fácil emparelhamento (como por exemplo, Bluetooth).
+   - Avaliações dos usuários do aplicativo Positivo Casa Inteligente: "Prático","Experiência excelente","Lâmpada pisca muito para emparelhar","Aplicativo é lento","Não funciona em paisagem no tablet"
 
 **5. Examine os preços e modelos de negócio.**
-   - Variação de R$60,00 até R$300,00 para campainhas inteligentes. Porém sem a acessibilidade que o deficiente auditivo necessita. 
+   - Variação de R$60,00 até R$300,00 dependendo de qual dispositivo o usuário compra. 
 
 **6. Pesquisa de satisfação do cliente e opiniões.**
-   - Dos produtos de criação acadêmica é citado limitações de estudos anteriores baseadas em número reduzido de participantes e aponta necessidade de mais testes de usabilidade (Jain et al., 2019);
-   - Para o projeto em questão, foi realizado uma pesquisa com 7 participantes para levantar necessidades — indica interesse em monitoramento de campainha, timers, alarmes e choro de bebê.
+   - Avaliações dos usuários do aplicativo Positivo Casa Inteligente: "Prático","Experiência excelente","Lâmpada pisca muito para emparelhar","Aplicativo é lento","Não funciona em paisagem no tablet"
 
 **7. Identifique padrões e tendências no mercado.**
    - Tendência para modelos específicos de "objetos inteligentes", como campainha inteligente, ou fechadura inteligente
+   - Navegação no estilo BottomNavigation
+   - Tela principal com os dispositivos aparecendo de forma de cards
 
 **8. Elabore relatórios e sumarize os resultados.**
    - Apps puramente móveis: alto poder de personalização, baixa robustez em captação.
@@ -92,15 +95,50 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 **9. Extraia pontos positivos e faça recomendações.**
    - Pontos positivos da proposta (comparados aos concorrentes): processamento local (latência <1 s), uso de YAMNet (ampla gama de classes), integração com Flutter + Firebase (notificações confiáveis), emparelhamento via BLE para facilitar configuração.
    - Personalização fácil; Proteção de privacidade; Robustez a ruído; e Foco em UX de configuração.
-     
+
+**10. Telas dos aplicativos**
+
+   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/opcaopositivo.jpg?raw=true)
+   
+   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/cadastropositivo.jpg?raw=true)
+
+   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/loginpositivo.jpg?raw=true)
+   
+   ![SmartLife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/opcaosmartlife.jpg?raw=true)
+   
+   ![SmartLife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/loginsmartlife.jpg?raw=true)
+
+   ![Alexa](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpalexa.jpg?raw=true)
+
+   ![GoogleHome](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpgooglehome.jpg?raw=true)
+   
+   ![PhilipsHue](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tphue.jpg?raw=true)
+
+   ![LGThinq](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tplgthinq.jpg?raw=true)
+   
+   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tppositivo.jpg?raw=true)
+   
+   ![Smartlife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpsmartlife.jpg?raw=true)
+   
+   ![Tuya](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tptuya.jpg?raw=true) 
+
+   
 ### Personas
 **Persona primaira (Maria, 58 anos):**
+
+![maria](https://github.com/user-attachments/assets/0a47a3b9-9ab8-4e9d-bb02-5d58d8daabfd)
+
+
 - Perfil: mulher, perda auditiva moderada a severa, mora sozinha em apartamento urbano, aposentada. Usa celular- para mensagens e redes sociais, tem familiar que a visita semanalmente.
 - Contexto socioeconômico e cultural: renda média-baixa (aposentadoria), ensino médio completo, prefere soluções de baixo custo e fáceis de usar; valoriza privacidade e autonomia.
 - Tecnologia / habilidades: usa smartphone, mas não gosta de configurações técnicas complexas; aceita ajuda de familiares para instalar algo pela primeira vez.
 - Necessidades e expectativas: perceber campainha, alarmes, temporizadores de cozinha e choro de bebê/animal (se houver visitas); receber notificações claras (visual e vibratória).
 
+
  **Persona secundária (Lucas, 34 anos):** 
+  
+  ![lucas-novaes-200x300](https://github.com/user-attachments/assets/d708420d-2538-471a-bec6-da7a46fa7a4d)
+  
 - Perfil: universitário/trabalhador com pouco tempo livre; mora perto e visita/ajuda a mãe; possui smartphone e bom conhecimento técnico.
 - Contexto socioeconômico e cultural: renda média, mora em área urbana; sensível a segurança da mãe e disposto a pagar por serviços que aumentem autonomia dela.
 - Tecnologia / habilidades: confortável com apps, consegue emparelhar dispositivos via Bluetooth e resolver problemas simples remotamente (p.ex. reiniciar Raspberry Pi).
@@ -174,6 +212,30 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
  -->
  
 ## Coleta de dados
+
+### 1. Que dados coletar?
+   - Idade, gênero, escolaridade;
+   - Fluência do usuário com LIBRAS e português;
+   - Desde de quando o usuário tem a deficiência auditiva, qual é o nível, quais são as suas dificuldades;
+   - Familiariedade com a tecnologia 
+
+
+### 2. De quem coletar?
+   - Pessoas surdas;
+   - Pessoas/Instituições responsáveis pelos surdos (pais, escolas, babás).
+
+### 2.1 Quais aspectos éticos?
+   - O projeto envolve aspectos éticos baseado no princípio da justiça e equidade, envolvendo a proteção dos dados e utilização deles apenas para desenvolvimento do projeto.
+
+### 3. Ferramentas de Coleta de Dados
+   - **Nome do instrumento e objetivo**: Questionário com o objetivo de coletar as informações necessárias com praticidade e possibilidade de escalabilidade e melhorias.
+
+### 3.2 Explicar como aplicar (serve para normalizar o processo de aplicação quando pessoas distintas aplicam o instrumento)
+   - Formular perguntas, separar as melhores e aplicá-las no questionário.
+
+### 3.3 Instrumento utilizado 
+
+[Formulário: Tecnologia para Inclusão: Um Aplicativo para Autonomia Auditiva](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header).
 
 ## Modelo de tarefas
 
