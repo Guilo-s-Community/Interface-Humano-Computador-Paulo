@@ -245,14 +245,28 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
     - Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
 - Discuta o papel das expectativas do usuário no projeto deste serviço ou poduto. Qual a importância e pontos a serem considerados se você quiser vender esse serviço ou poduto?
 
-### Prototipação em baixo nível (papel)
-#### Avaliação heurística
-
-### Prtotipação em médio nível (Figma)
-#### Avaliação heurística
 
 ### Prtotipação em alto nível (React)
-#### Avaliação heurística
+
+![CadOrLogin](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/cadorlogin.jpg?raw=true)
+
+![Cadastro](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/cadastro.jpg?raw=true)
+
+![Login](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/login.jpg?raw=true)
+
+![Home](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/home.jpg?raw=true)
+
+![Perfil](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/perfil.jpg?raw=true)
+
+![Configuração](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/configuracao.jpg?raw=true)
+
+![Ajuda](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/ajuda.jpg?raw=true)
+
+![NovoDispositivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/novodispositivo.jpg?raw=true)
+
+![Vincular](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/vincular.jpg?raw=true)
+
+![ConfigDispostivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/configdispositivo.jpg?raw=true)
 
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
