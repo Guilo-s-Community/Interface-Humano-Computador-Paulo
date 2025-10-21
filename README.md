@@ -1,3 +1,60 @@
+**1\) Conhecendo o Problema** 
+
+1.1) Membros de Equipe:
+- Paulo Vinicius Araujo Feitosa 24.122.042-5
+
+1.2) Título Original do TCC:
+
+- Detecção e identificação de som ambiente para auxílioo doméstico de pessoas com deficiência auditiva
+
+1.3) Nome do orientador:
+
+- Plinio Thomaz Aquino Junior
+
+1.4) Previsto desenvolver Interface? ( x ) Sim  (  ) Não
+
+1.5) Objetivo do trabalho?
+
+- Desenvolver um hardware capaz de detectar e identificar um som e enviar para um aplicativo, auxiliando de forma direta a independência de pessoas surdas, por meio de uma notificação.
+
+1.6) Qual o produto final? 
+
+- Hardware para detectar e identificar som.
+- Software para experiência do usuário.
+
+1.7) Quem é o usuário final deste produto?
+
+- Pessoas surdas com intenção de utilizar a tecnologia ao seu favor.
+
+1.8) O que o usuário recebe de benefício ao usar esse produto? 
+
+- Independência/autonomia e percepcão do ambiente.
+
+1.9) Quais as funcionalidades da ferramenta (visão do usuário)?
+	
+- Cadastro
+- Login 
+- Cadastro do dispositivo
+- Edição do perfil
+- Configuração do dispositivo
+
+1.10) Quais tecnologias e ferramentas computacionais que pretendem usar neste projeto (TCC)?
+- Hardware: Raspberry Pi 4 Model B (8 GB).
+- Microfone Adafruit I2S MEMS SPH0645LM4H.
+- Armazenamento de Dados : Serviços da Firebase.
+- Mobile: Flutter (Dart) para o aplicativo multiplataforma.
+
+1.11) Qual é o contexto de uso dessa aplicação?
+
+- Usuário : Pessoas de qualquer idade com qualquer grau de surdez.
+- Objetivo : Saber onde e quando ocorreu um barulho.
+- Interação : Receber uma notificação e agir conforme vontade.
+- Equipamento : Celular.
+
+- O contexto de uso é: Uma casa, um ambiente confortável com barulhos tradicionais do cotidiano, a pessoa segue com sua rotina normalmente, porém um barulho foi detecado em outro cômodo da casa. A pessoa recebe em seu celular a notificação - "Barulho em QUARTO detectado - Som de objeto quebrando". Assim, ela corre para ver o que aconteceu e se depara com um vaso quebrado do lado de sua cama e seu gato em cima da escrivaninha. Após perceber que tudo está bem e arrumar a ocorrência, ela segue sua rotina novamente.
+
+
+
 # Projeto de Interface Humano-Computador
 
 Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interface Humano-Computador (CC8122) do curso de Ciencia da Computação, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
@@ -205,7 +262,7 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 ## Análise de concorrência
 
 - Pesquise serviços ou produtos existentes atualmente que possam realizar o objetivo deste projeto.
-- Selecione pelo menos 3 serviços ou podutos diferentes.
+- Selecione pelo menos 3 serviços ou produtos diferentes.
 - Em relação aos concorrentes, respondam as seguintes perguntas?
   - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
   - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
@@ -268,8 +325,99 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 
 ![ConfigDispostivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/configdispositivo.jpg?raw=true)
 
-[^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
+# **Entrega 7**
 
+**\[PARTE A: 1 solução completa por pessoa da equipe\]**
+
+**1\)	Identificação de Necessidades dos Usuários e Requisitos de IHC: exercício de perguntas**
+
+* **Que dados coletar?**
+  
+	-	Infomações pessoais: nome, idade e grau de surdez;
+	- 	Dificuldades atuais;
+	-   Como elas buscam as soluções atuais;
+ 	-   Familiaridade com a tecnologia;  
+    - 	Coletar feedbacks específicos após explicação da solução: o que mudaria? o que acredita ser uma barreira? ... ;
+    - 	Perguntas específicas para cada pessoa, depende da relação dela com a surdez.
+    
+* **De quem coletar?**
+  	- Pessoas surdas;
+  	- Pessoas/Instituições responsáveis pelos surdos (pais, escolas, babás).
+  
+**2\)	Aspectos Éticos**
+
+* **Seu projeto deverá considerar aspectos éticos? Justifique usando os conceitos da aula.**
+
+	- Sim, o projeto envolve aspectos éticos baseado no princípio da justiça e equidade, envolvendo a proteção dos dados e utilização deles apenas para desenvolvimento do projeto.
+
+**\[PARTE B: 1 solução completa por pessoa da equipe \- e com técnicas diferente; questionário deve ser uma das técnicas escolhidas\]**
+
+**3\)	Ferramentas de Coleta de Dados**  
+**3.1) nome do instrumento e objetivo de aplicação**  
+
+	- Questionário com o objetivo de coletar as informações necessárias com praticidade e possibilidade de escalabilidade e melhorias.
+
+
+**3.2) explicar como aplicar (serve para normalizar o processo de aplicação quando pessoas distintas aplicam o instrumento)** 
+
+	- Formular perguntas, separar as melhores e aplicá-las no questionário.
+
+
+**3.3) instrumento (por exemplo, link do questionário no Google Forms, roteiro de entrevista, roteiro do Grupo Focal, etc)**
+
+[Link do questionário](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)
+	
+# 
+
+# **Entrega 8**
+
+**CICLO DE VIDA DE ENGENHARIA DE USABILIDADE**
+
+1. **Características da Plataforma**  
+   
+
+| Característica | Descrição |
+| :---- | :---- |
+| Descrição do Software e Hardawre| Hardware capaz de detectar e identificar um som ambiente integrado com um software que notifcará a pessoa do evento ocorrido |
+| LISTA DE Capacidades da Plataforma (com explicação) | Possibilidade de usar em qualquer lugar |
+| LISTA DE Restrições da Plataforma (com explicação) | Dependência de bateria - Dependência de Internet - Tamanho de tela - Muitas notificações seguidas|
+
+2. **Princípios Gerais do Projeto**  
+   
+**Pilar de negócio do mercado**
+ 
+| Nome | Descrição | Link |
+| :---- | :---- | :---- |
+| Descrição do Contexto | .  |  |
+| Lei Geral de Proteção de Dados (LGPD) \- Lei n.º 13.709/2018 | A LGPD é a legislação brasileira que regulamenta o tratamento de dados pessoais no Brasil. É importante para o projeto porque estabelece regras sobre como os dados dos usuários devem ser coletados, armazenados, processados e protegidos, garantindo sua privacidade e segurança. | [https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) |
+| Lei n.º 10.098/2000 \- Lei da Acessibilidade |  Esta lei brasileira estabelece normas gerais e critérios básicos para a promoção da acessibilidade das pessoas com deficiência ou com mobilidade reduzida. É importante para o projeto porque define diretrizes para tornar produtos e serviços, incluindo interfaces de usuário, acessíveis a todos os usuários, independentemente de suas habilidades físicas ou cognitivas. | [https://www.planalto.gov.br/ccivil\_03/leis/l10098.htm](https://www.planalto.gov.br/ccivil_03/leis/l10098.htm) |
+| ABNT NBR ISO 9241 Ergonomia da interação humano-sistema |  Esta série de normas brasileiras, baseadas nas normas ISO 9241, fornece diretrizes e orientações para o design centrado no usuário de sistemas interativos, incluindo a concepção de interfaces de usuário. A parte 210 aborda o processo de design centrado no humano, enquanto a parte 11 fornece orientações específicas sobre usabilidade. Essas normas são importantes para o projeto porque estabelecem princípios e métodos para garantir que a interface do usuário atenda às necessidades e expectativas dos usuários. | [https://www.inf.ufsc.br/\~edla.ramos/ine5624/\_Walter/Normas/Parte%2011/iso9241-11F2.pdf](https://www.inf.ufsc.br/~edla.ramos/ine5624/_Walter/Normas/Parte%2011/iso9241-11F2.pdf) |
+| Lei Brasileira de Inclusão da Pessoa com Deficiência (Lei nº 13.146/2015) | Define critérios de acessibilidade, comunicação e tecnologia assistiva e especialmente para comprovar que o produto promove autonomia e não cria barreiras de uso. | https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm |
+| Norma IEC 62368-1 (substituindo 60065 / 60950) | Normativa internacional sobre segurança de equipamentos de tecnologia da informação e áudio/vídeo | https://icertifi.com/iec-62368-certification-replacing-iec-60950-1-and-iec-60065/? |
+
+**Pilar da Interface**
+![Patterns](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/imagem_2025-10-12_143807226.png?raw=true)
+
+
+3. **Metas de Usabilidade**
+
+   1. **Qualitativo**
+      
+      	- Tela simples
+      	- Textos diretos
+      	- Feedback constante para o usuário
+      	- Ao selecionar um texto, possibilita a acessibilidade para LIBRAS 
+
+   3. **Quantitativo**  
+
+| Metas | Porcentagem | Justificativa |
+| ----- | :---- | :---- |
+| Facilidade de aprendizado | 10% | Só há a necessidade de aprender se for a primeira vez de uso em um aplicativo de Smart Home, Guilo's Sound seuge a maioria dos padõres de mercado |
+| Facilidade de memorização | 10% | Pouca taxa de memorização, apenas em algum passo mais importante, uma dificuldade do usuário ou memorizar a solução de algum erro específico|
+| Eficiência | 30% | Importante passo para não exigir muito tempo  e dúvidas do usuário  |
+| Eficácia | 30% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
+| Satisfação | 20% | Usuário deve se sentir seguro com o aplicativo, não gerar dúvidas e passos incompletos para ter o retorno positivo dele  |
+| **Total** | **100%** | Porcentagem |
 <!-- TODOs:
 - Add exemplos
  -->
