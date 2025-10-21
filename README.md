@@ -1,3 +1,12 @@
+# Projeto de Interface Humano-Computador
+
+Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interface Humano-Computador (CC8122) do curso de Ciencia da Computação, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
+
+Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETECÇÃO E IDENTIFICAÇÃO DE SOM AMBIENTE PARA AUXÍLIO DOMÉSTICO DE PESSOAS COM DEFICIÊNCIA AUDITIVA sob orientação do Professor Dr. Plinio Thomaz Aquino Junior e desenvolvido pelos seguintes alunos:
+
+- Paulo Vinicius Araujo Feitosa 24.122.042-5
+- Guilherme Marcato Mendes Justiça 22.225.030-0
+
 **1\) Conhecendo o Problema** 
 
 1.1) Membros de Equipe:
@@ -54,15 +63,6 @@
 - O contexto de uso é: Uma casa, um ambiente confortável com barulhos tradicionais do cotidiano, a pessoa segue com sua rotina normalmente, porém um barulho foi detecado em outro cômodo da casa. A pessoa recebe em seu celular a notificação - "Barulho em QUARTO detectado - Som de objeto quebrando". Assim, ela corre para ver o que aconteceu e se depara com um vaso quebrado do lado de sua cama e seu gato em cima da escrivaninha. Após perceber que tudo está bem e arrumar a ocorrência, ela segue sua rotina novamente.
 
 
-
-# Projeto de Interface Humano-Computador
-
-Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interface Humano-Computador (CC8122) do curso de Ciencia da Computação, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
-
-Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETECÇÃO E IDENTIFICAÇÃO DE SOM AMBIENTE PARA AUXÍLIO DOMÉSTICO DE PESSOAS COM DEFICIÊNCIA AUDITIVA sob orientação do Professor Dr. Plinio Thomaz Aquino Junior e desenvolvido pelos seguintes alunos:
-
-- Paulo Vinicius Araujo Feitosa 24.122.042-5
-- Guilherme Marcato Mendes Justiça 22.225.030-0
 
 ## Resumo
 
@@ -301,6 +301,68 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 - Pense nas características de Affordances do seu serviço ou poduto. 
     - Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
 - Discuta o papel das expectativas do usuário no projeto deste serviço ou poduto. Qual a importância e pontos a serem considerados se você quiser vender esse serviço ou poduto?
+
+# **Entrega 5**
+
+**\[1 solução por pessoa\]**
+
+Funcionalidade geral:
+ - O objetivo dessa funcionalidade é cadastrar um novo hardware (dispositivo que detectará o som ambiente) no aplicativo do usuário.
+
+**Análise de Tarefas**
+
+**1\) HTA**
+
+![HTA](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/HTA.jpg?raw=true)
+
+- Para cadastrar o hardware, o usuário deverá seguir, em ordem, 3 passos:
+  
+  		-Seguir para a tela de cadastro.
+  
+  		-Informar os dados do Wi-Fi:
+  		Nessa etapa o usuário tem duas opções e deverá seguir com alguma das duas:  
+  			- 1: O usuário já informou os dados da rede anteriormente;  
+  			- 2: O usuário deve informar wi-fi e senha da rede em qualquer ordem, preferencialmente o nome da rede antes.
+    
+    	-Escolher o dispositvo.
+
+**2\) GOMS**
+
+![GOMS](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/Goms.jpg?raw=true)
+
+- Para cadastrar o hardware, o usuário deverá seguir 3 goals principais:
+  
+  		Objetivo 1: Seguir para a tela de cadastro
+  			-O usuário deve clicar no ícone de (+).
+  
+  		Objetivo 2: Informar os dados do Wi-Fi.
+    
+  		Nessa etapa o usuário tem dois métodos e deverá seguir com algum deles:
+  
+  			- Método 1: O usuário já informou os dados da rede anteriormente e as informações já estão salvas no sistema;
+  				- O usuário deverá clicar no botão "vincular"
+  
+  			- Método 2: O usuário ainda não informou o Wi-Fi e deve informá-lo para cadastrar o dispositivo.
+  				- Método 2.A : Informar o nome da rede, e, em seguida, a senha da rede.
+  					-O usuário deve clicar em "nome da rede" e informá-lo;
+  					-O usuário deve clicar em "senha" e informá-la;
+  					-O usuário deve clicar no botão "vincular".
+				- Método 2.A : Informar a senha da rede, e, em seguida, o nome da rede.
+					-O usuário deve clicar em "senha" e informá-la;
+					-O usuário deve clicar em "nome da rede" e informá-lo;
+					-O usuário deve clicar no botão "vincular".
+  
+		Objetivo 3: Escolher o dispositvo.
+    		-O usuário deve clicar no dispositivo encontrado
+  			
+
+**3\) CTT**
+
+![CTT](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/CTT.jpg?raw=true)
+
+	- Para cadastrar um novo hardware, o usuário deve acessar a tela de cadastro de hardware e informar os dados da rede Wi-Fi, inserindo o nome e a senha em qualquer ordem.
+	Em seguida, o sistema salva as informações da rede e direciona o usuário para a tela de vinculação, onde ele deverá selecionar o dispositivo desejado.
+	Após a escolha, o sistema registra o dispositivo e conclui o processo de vinculação.
 
 
 ### Prtotipação em alto nível (React)
