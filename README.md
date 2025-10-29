@@ -258,15 +258,7 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
   - Recebo o alerta no celular. No celular, a notificação vibratória e visual informa tipo de som, horário e local. Toco para abrir o app e posso ver histórico e informações do hardware (telas previstas no protótipo).
   - Ação e confirmação. Depois de avisado, tomo a ação necessária (atender a porta, verificar o bebê, checar o alarme). No app, o evento fica registrado para consulta posterior, apoiando avaliações de usabilidade e confiabilidade do sistema.
 
-<!--
-## Análise de concorrência
 
-- Pesquise serviços ou produtos existentes atualmente que possam realizar o objetivo deste projeto.
-- Selecione pelo menos 3 serviços ou produtos diferentes.
-- Em relação aos concorrentes, respondam as seguintes perguntas?
-  - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
-  - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
- -->
  
 ## Coleta de dados
 
@@ -301,6 +293,26 @@ Preferências e configurações: Lista de classes sonoras relevantes (ex.: campa
 - Pense nas características de Affordances do seu serviço ou poduto. 
     - Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
 - Discuta o papel das expectativas do usuário no projeto deste serviço ou poduto. Qual a importância e pontos a serem considerados se você quiser vender esse serviço ou poduto?
+
+# **Entrega 4**
+## Cenário de Análise/Problema 
+
+Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, perde timers do micro-ondas, campainha, alarmes e até o choro de um bebê — resultando em comida queimada, visitas perdidas e sensação contínua de insegurança e dependência da filha que a ajuda semanalmente. Ela usa smartphone para mensagens, quer soluções simples, baratas e que preservem sua privacidade.
+
+Um dispositivo local que identifica sons importantes dentro de casa e envia notificações visuais e por vibração ao celular resolveria esses problemas: evitaria riscos (alarme de incêndio), garantiria que receba entregas e visitas, e devolveria autonomia sem configurações complexas
+
+## Questões de Refinamento
+- Evento; ator; ambiente; objetivo
+
+Atualmente, não há perguntas para refinamento sobre esses elementos
+
+- Planejamento - ação - avaliação
+
+Como os atores alcançam o objetivo atualmente? Como gostariam de fazê-lo?
+**Refinamento do Cenário Análise/Problema**
+
+Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, sempre anda com seu celular para recer notificações do aplicativo Hear's Sound, assim não perde timers do micro-ondas, campainha, alarmes e até o choro de um bebê, que a avisa sobre os sons importantes dentro de sua casa.
+
 
 # **Entrega 5**
 
@@ -480,6 +492,14 @@ Funcionalidade geral:
 | Eficácia | 30% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
 | Satisfação | 20% | Usuário deve se sentir seguro com o aplicativo, não gerar dúvidas e passos incompletos para ter o retorno positivo dele  |
 | **Total** | **100%** | Porcentagem |
-<!-- TODOs:
-- Add exemplos
- -->
+
+
+
+# **Entrega 9**
+
+## Cenário de Interação (destacar em cor diferente o texto alterado entre Cenário Problema e Cenário de Interação)
+
+Dona Rosa prepara o almoço e programa o micro-ondas. Ela senta na sala e cochila levemente, dessa vez o dispositivo instalado na cozinha detecta o timer e o **celular de Rosa vibra enquanto uma notificação visual “Timer: Micro-ondas” aparece na tela**; ela levanta e retira a comida antes que queime, sorrindo por ter evitado mais um desperdício.
+
+Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da campainha e envia ao telefone de Rosa um alerta visual e vibratório indicando “Campainha — Entrada”**, ela atende sem precisar depender de bater na porta ou da filha. Já à noite, quando uma fritura começa a queimar, o alarme de fumaça dispara e o **dispositivo envia um alerta de emergência persistente e vibração forte ao celular**. Rosa percebe o aviso e sai do apartamento em segurança. Durante a visita da filha e do neto, **o aparelho identifica o choro do bebê no corredor e notifica Rosa imediatamente, permitindo que ela vá ajudar o netinho sem esperar ser chamada.**
+
