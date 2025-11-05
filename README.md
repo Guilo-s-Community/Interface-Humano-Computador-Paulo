@@ -542,5 +542,3 @@ Cadastro de Hardware (C) - Cadatro de novos dispositivos do usuário
 # **Entrega 11**
 
 ![Figma](https://www.figma.com/design/T6PYaEwsPFynxvJS5dRkbb/TesteTcc?node-id=0-1&p=f&t=xcNSIIIYd4Sz6stO-0)
-
-![infoHardware](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/info_hardware.jpg?raw=true)
