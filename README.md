@@ -399,7 +399,7 @@ Funcionalidade geral:
 
 ![ConfigDispostivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/configdispositivo.jpg?raw=true)
 
-# **Entrega 7**
+# **Entrega 7  02/10 [concluído]**
 
 **\[PARTE A: 1 solução completa por pessoa da equipe\]**
 
@@ -429,19 +429,17 @@ Funcionalidade geral:
 **3\)	Ferramentas de Coleta de Dados**  
 **3.1) nome do instrumento e objetivo de aplicação**  
 
-	- Questionário com o objetivo de coletar as informações necessárias com praticidade e possibilidade de escalabilidade e melhorias.
+Questionário com o objetivo de coletar as informações necessárias com praticidade e possibilidade de escalabilidade e melhorias.
 
 
 **3.2) explicar como aplicar (serve para normalizar o processo de aplicação quando pessoas distintas aplicam o instrumento)** 
 
-	- Formular perguntas, separar as melhores e aplicá-las no questionário.
+Formular perguntas, separar as melhores e aplicá-las no questionário.
 
 
 **3.3) instrumento (por exemplo, link do questionário no Google Forms, roteiro de entrevista, roteiro do Grupo Focal, etc)**
 
-[Link do questionário](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)
-	
-# 
+![Questionário]( https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)
 
 # **Entrega 8**
 
@@ -497,9 +495,52 @@ Funcionalidade geral:
 
 # **Entrega 9**
 
-## Cenário de Interação (destacar em cor diferente o texto alterado entre Cenário Problema e Cenário de Interação)
+## 1) Cenário de Interação (destacar em cor diferente o texto alterado entre Cenário Problema e Cenário de Interação)
 
 Dona Rosa prepara o almoço e programa o micro-ondas. Ela senta na sala e cochila levemente, dessa vez o dispositivo instalado na cozinha detecta o timer e o **celular de Rosa vibra enquanto uma notificação visual “Timer: Micro-ondas” aparece na tela**; ela levanta e retira a comida antes que queime, sorrindo por ter evitado mais um desperdício.
 
 Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da campainha e envia ao telefone de Rosa um alerta visual e vibratório indicando “Campainha — Entrada”**, ela atende sem precisar depender de bater na porta ou da filha. Já à noite, quando uma fritura começa a queimar, o alarme de fumaça dispara e o **dispositivo envia um alerta de emergência persistente e vibração forte ao celular**. Rosa percebe o aviso e sai do apartamento em segurança. Durante a visita da filha e do neto, **o aparelho identifica o choro do bebê no corredor e notifica Rosa imediatamente, permitindo que ela vá ajudar o netinho sem esperar ser chamada.**
 
+## 2) Design Centrado na Comunicação
+
+**Nome do Cenário: Cadastro de Usuário no aplicativo**
+
+| tópico \> subtópico (diálogo) | falas e signos |
+| :---- | :---- |
+| cadastrar no aplicativo | U: Preciso me cadastrar no aplicativo… |
+| \>informar dados do usuário  | D: Qual **e-mail** e **senha** que gostaria de utilizar? U: Quero informar meu **e-mail** principal e minha **senha** padrão|
+| restrições dos dados | D: Para realizar o cadastro, você deve informar um **e-mail** válido que aceitamos e uma **senha** que cumpra os requisitos do nosso aplicativo U: Ok, seguirei os padrões do seu aplicativo  |
+| cadastrar dados do usuário | D: Vi que você informou uma **senha de confirmação** diferente da anterior, poderia colocar as duas **senhas** iguais? U: Verdade, escrevi errado no **campo de confirmação**!  |
+| cadastrar dados do usuário | D: Agora sim, seu cadastro foi realizado. U: Que bom! |
+| mensagem | D: Se preferir, você pode entrar no aplicativo agora ou posteriormente. U: Entrarei agora!|
+
+
+
+## 3) Mapa de Objetivos (cada um coloca seu mapa de objetivos e deverá ter um diagrama de consolidação)
+   
+![MapaObjetivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/Flowchart.jpg?raw=true)
+
+4) **Esquema Conceitual de Signos**
+
+Cadastro de Hardware (C) - Cadatro de novos dispositivos do usuário
+
+| **Signo** | **Origem** | **Tipo de Conteúdo** | **Restrição sobre Conteúdo** | **Valor Default** | **Prevenção (PP)** | **Recuperação (RA)** | **Observações / Significado** |
+| :-------------------------------- | :------------------- | :------------------- | :------------------------------------------- | :---------------------- | :------------------------------------------------ | :---------------------------------------------- | :---------------------------------------------------------- |
+| Campo “Nome da Rede Wi-Fi” | Transformados | Texto | Não pode ser nulo | — | Campo obrigatório | - | Representa a identificação da rede para conexão do hardware |
+| Campo “Senha Wi-Fi” | Transformados | Texto  | Não pode ser nulo | — | Campo obrigatório - Oculta senha | - | Representa a identificação da rede para conexão do hardware |
+| Botão “Vincular Dispositivo” | Convencionais | Ação | Disponível apenas após Wi-Fi preenchido | - | Alerta para preecher os campos primeiro | Exibe mensagem “preencha os dados” em caso de erro | Inicia o processo de pareamento |
+
+# **Entrega 10**
+
+**MOLIC**
+
+![Molic](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/molic.jpg?raw=true)
+
+**Nome do Cenário:**  
+**Diagrama: Informações do Dispositivo**
+
+# **Entrega 11**
+
+![Figma](https://www.figma.com/design/T6PYaEwsPFynxvJS5dRkbb/TesteTcc?node-id=0-1&p=f&t=xcNSIIIYd4Sz6stO-0)
+
+![infoHardware](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/info_hardware.jpg?raw=true)
