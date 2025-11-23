@@ -453,6 +453,28 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 
 
 # Entrega 10 
-## MOLIC 
+## MOLIC
+<img width="856" height="497" alt="MOLIC" src="https://github.com/user-attachments/assets/664f2baa-5b37-4635-9b8c-3a90a9940de2" />
 
+# Entrega 11
+## FIGMA 
+![Link Figma](https://www.figma.com/design/T6PYaEwsPFynxvJS5dRkbb/TesteTcc?node-id=4-27&t=H1TxALvivAInfDig-0)
+
+# Entrega 12
+## Planejamento da Avalisação
+
+1. Planejamento de usabilidade
+| **Letra** | **Descrição / Preenchimento** |
+|----------|-------------------------------|
+| **D – Determinar os objetivos da avaliação** | Avaliar se os usuários conseguem se cadastrar sem dificuldades no aplicativo; verificar se a interface é acessível para pessoas surdas; medir se o fluxo evita erros e reduz esforço cognitivo. |
+| **E – Explorar perguntas a serem respondidas** | - O usuário entende como inserir os dados login (e=mail e senha)?<br> - Ele compreende os textos presentes no aplicativo?<br> - O usuário percebe claramente feedbacks<br> - O sistema passa sensação de segurança? |
+| **C – Escolher métodos de avaliação** | Avaliação heurística, teste de usabilidade com observação, entrevistas rápidas pós-teste, análise de tarefas e coleta de métricas (tempo, erros, cliques). |
+| **I – Identificar usuários** | Usuários primários: pessoas surdas.<br> Usuários secundários: familiares que configuram dispositivos. |
+| **D – Decidir questões práticas** | Local: teste no próprio celular dos avaliados ou ambiente controlado. |
+| **E – Avaliar, interpretar e apresentar os dados** | A análise deve considerar: facilidade de uso, clareza visual, erros encontrados, expectativas dos usuários e sugestões. Resultados devem ser categorizados em eficiência, eficácia e satisfação, com gráficos e anotações qualitativas. |
+
+2. Lista de instrumentos 
+++ Questionários
+++ Formulário de avalisação heurística
+++ Tabela de observações
 
