@@ -464,6 +464,7 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 ## Planejamento da Avalisação
 
 1. Planejamento de usabilidade
+
 | **Letra** | **Descrição / Preenchimento** |
 |----------|-------------------------------|
 | **D – Determinar os objetivos da avaliação** | Avaliar se os usuários conseguem se cadastrar sem dificuldades no aplicativo; verificar se a interface é acessível para pessoas surdas; medir se o fluxo evita erros e reduz esforço cognitivo. |
@@ -473,8 +474,11 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 | **D – Decidir questões práticas** | Local: teste no próprio celular dos avaliados ou ambiente controlado. |
 | **E – Avaliar, interpretar e apresentar os dados** | A análise deve considerar: facilidade de uso, clareza visual, erros encontrados, expectativas dos usuários e sugestões. Resultados devem ser categorizados em eficiência, eficácia e satisfação, com gráficos e anotações qualitativas. |
 
-2. Lista de instrumentos 
-++ Questionários
-++ Formulário de avalisação heurística
-++ Tabela de observações
+2. Lista de instrumentos
+
+	2.1 Questionários
+
+	2.2 Formulário de avalisação heurística
+
+	2.3 Tabela de observações
 
