@@ -309,14 +309,43 @@ Atualmente, não há perguntas para refinamento sobre esses elementos
 - Planejamento - ação - avaliação
 
 Como os atores alcançam o objetivo atualmente? Como gostariam de fazê-lo?
-**Refinamento do Cenário Análise/Problema**
+## Refinamento do Cenário Análise/Problema
 
 Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, sempre anda com seu celular para recer notificações do aplicativo Hear's Sound, assim não perde timers do micro-ondas, campainha, alarmes e até o choro de um bebê, que a avisa sobre os sons importantes dentro de sua casa.
 
 
+# **Entrega 5**
+## Análise de Tarefas 
+ - Cadastro de um Hardware
 
-  			
+1) HTA
+<img width="651" height="321" alt="HTA" src="https://github.com/user-attachments/assets/b1776df4-926d-4421-83d7-b914b7aefd92" />
 
+
+2) GOMS
+Goal 0: Cadastrar um Hardware
+	Goal 1: Ir para tela cadastro
+		op 1: clicar no ícone (+)
+	Goal 2: Informar dados do Wi-Fi
+		Method 1: Dados previamente informados
+			(Rule: o Wi-Fi já foi informado previamente pelo usuário e salvo no sistema)
+		Method 2: Wi-Fi ainda não informado
+			(Rule: o Wi-Fi ainda não foi informado)
+   				Method 2.A Inserindo as informações
+   					(Rule: Usuário insere o nome e senha da rede)
+   						op 2.A.1: clicar em nome da rede    
+						op 2.A.2: digitar em nome da rede
+   						op 2.A.3: clicar em senha
+   						op 2.A.4: digitar senha
+   						op 2.A.5: clicar no botão vincular
+	Goal 3: Escolher hardware
+		op 1: Clicar no dispositivo encontrado na rede
+   
+4) CTT
+
+<img width="711" height="401" alt="CTT" src="https://github.com/user-attachments/assets/f5229411-a7e7-4307-97b5-05ac1aa1beab" />
+
+# **Entrega 6**
 
 ### Prtotipação em alto nível (React)
 
@@ -339,4 +368,91 @@ Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, s
 ![Vincular](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/vincular.jpg?raw=true)
 
 ![ConfigDispostivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/prototype/configdispositivo.jpg?raw=true)
-)
+
+
+
+# **Entrega 7**
+
+## O quê coletar: 
+++ Idade;
+++ grau de surdez;
+++ se mora com outra pessoa com deficiência auditiva;
+++ Dificuldades atuais dentro de casa; 
+++ Como é feita a solução destes problemas 
+## De quem coletar:
+++ Pessoas com deficiência auditiva que buscam independência e segurança dentro de casa
+## Ferramentas de coleta: 
+++ Formulário (![Formulário]([https://doi.org/10.1145/3290605.3300324](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)) 
+++ Questionário de perguntas/dúvidas dos deficientes auditivos 
+++ Estudos de casos já existentes sobre o projeto (![Exploring sound awareness in the home for people who are deaf or hard of hearing](https://doi.org/10.1145/3290605.3300324) 
+
+
+# **Entrega 8**
+## Ciclo de vida de engenharia de usabilidade
+
+1. Características da plataforma
+| Característica | Descrição |
+| :---- | :---- |
+| Descrição do Produto| Hardware capaz de detectar e identificar um som ambiente integrado com um software que notifcará a pessoa do evento ocorrido |
+| Lista de  Capacidades da Plataforma | Possibilidade de usar em qualquer lugar |
+| Lsita de Restrições da Plataforma | Dependência de Internet - Tamanho de tela - Muitas notificações seguidas|
+
+2. Princípios gerais do projeto
+**Pilar da Interface**
+| Nome | Descrição | Link |
+| :---- | :---- | :---- |
+| Psicologia das cores | Utilza-se a cor Roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
+| Estratégia da tipografia | Urbanist é uma fonte sans-serif geométrica de baixo contraste, inspirada na tipografia e no design modernistas | (https://firmorama.com/uso-estrategico-da-tipografia-como-meio-de-transmitir-mensagens-e-a-personalidade-da-marca) |
+| Logo Invertido | A variação do logotipo é a arte de reorganizar seu logotipo principal, para que funcione em várias colocações | (https://www.tailorbrands.com/pt-br/blog/variacoes-de-logotipo) |
+
+
+![Patterns](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/imagem_2025-10-12_143807226.png?raw=true)
+
+
+3. **Metas de Usabilidade**
+
+   1. **Qualitativo**
+      
+      	- Tela simples
+      	- Acessibilidade para surdos (LIBRAS)
+
+   3. **Quantitativo**  
+
+| Metas | Porcentagem | Justificativa |
+| ----- | :---- | :---- |
+| Facilidade de aprendizado | 10% | Só há a necessidade de aprender se for a primeira vez de uso em um aplicativo de Smart Home, Guilo's Sound segue a maioria dos padrões de mercado |
+| Facilidade de memorização | 10% | Pouca taxa de memorização, apenas em algum passo mais importante, uma dificuldade do usuário ou memorizar a solução de algum erro específico|
+| Eficiência | 30% | Importante passo para não exigir muito tempo  e dúvidas do usuário  |
+| Eficácia | 30% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
+| Satisfação | 20% | Usuário deve se sentir seguro com o aplicativo, não gerar dúvidas e passos incompletos para ter o retorno positivo dele  |
+| **Total** | **100%** | Porcentagem |
+
+
+
+# Entrega 9
+## Modelo Conceitual 
+
+1. Cenários de Interação
+Dona Rosa prepara o almoço e programa o micro-ondas. Ela senta na sala e cochila levemente, dessa vez o dispositivo instalado na cozinha detecta o timer e o **celular de Rosa vibra enquanto uma notificação visual “Timer: Micro-ondas” aparece na tela**; ela levanta e retira a comida antes que queime, sorrindo por ter evitado mais um desperdício.
+
+Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da campainha e envia ao telefone de Rosa um alerta visual e vibratório indicando “Campainha — Entrada”**, ela atende sem precisar depender de bater na porta ou da filha. Já à noite, quando uma fritura começa a queimar, o alarme de fumaça dispara e o **dispositivo envia um alerta de emergência persistente e vibração forte ao celular**. Rosa percebe o aviso e sai do apartamento em segurança. Durante a visita da filha e do neto, **o aparelho identifica o choro do bebê no corredor e notifica Rosa imediatamente, permitindo que ela vá ajudar o netinho sem esperar ser chamada.**
+
+
+2. Design Centrado na Comunicação
+
+**Nome do Cenário: Cadastro de Usuário no aplicativo**
+
+| tópico \> subtópico (diálogo) | falas e signos |
+| :---- | :---- |
+| cadastrar no aplicativo | U: Preciso me cadastrar no aplicativo|
+| \>informar dados do usuário  | D: Qual é o **e-mail** e **senha** de cadastro? U: Quero cadastrar meu **e-mail** principal e minha **senha** padrão|
+| restrições dos dados | D: Para realizar o cadastro, você deve informar um **e-mail** válido que aceitamos e uma **senha** que cumpra os requisitos do nosso aplicativo U: Ok, seguirei os padrões do seu aplicativo  |
+| cadastrar dados do usuário | D: Vi que você informou uma **senha de confirmação** diferente da anterior, poderia colocar as duas **senhas** iguais? U: Verdade, escrevi errado no **campo de confirmação**!  |
+| cadastrar dados do usuário | D: Agora sim, seu cadastro foi realizado. U: Que bom! |
+| mensagem | D: Se preferir, você pode entrar no aplicativo agora ou posteriormente. U: Entrarei agora!|
+
+
+# Entrega 10 
+## MOLIC 
+
+
