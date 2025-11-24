@@ -153,32 +153,6 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
    - Pontos positivos da proposta (comparados aos concorrentes): processamento local (latência <1 s), uso de YAMNet (ampla gama de classes), integração com Flutter + Firebase (notificações confiáveis), emparelhamento via BLE para facilitar configuração.
    - Personalização fácil; Proteção de privacidade; Robustez a ruído; e Foco em UX de configuração.
 
-**10. Telas dos aplicativos**
-
-   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/opcaopositivo.jpg?raw=true)
-   
-   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/cadastropositivo.jpg?raw=true)
-
-   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/loginpositivo.jpg?raw=true)
-   
-   ![SmartLife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/opcaosmartlife.jpg?raw=true)
-   
-   ![SmartLife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/loginsmartlife.jpg?raw=true)
-
-   ![Alexa](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpalexa.jpg?raw=true)
-
-   ![GoogleHome](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpgooglehome.jpg?raw=true)
-   
-   ![PhilipsHue](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tphue.jpg?raw=true)
-
-   ![LGThinq](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tplgthinq.jpg?raw=true)
-   
-   ![Positivo](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tppositivo.jpg?raw=true)
-   
-   ![Smartlife](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tpsmartlife.jpg?raw=true)
-   
-   ![Tuya](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/tptuya.jpg?raw=true) 
-
    
 ### Personas
 **Persona primaira (Maria, 58 anos):**
