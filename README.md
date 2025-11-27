@@ -357,13 +357,10 @@ Goal 1: Entrar com o novo cadastro
 | LISTA DE Restrições da Plataforma (com explicação) | Dependência de Internet para o seu funcionamento contínuo |
 
    
-
-2. Princípios gerais do projeto
 **Pilar da Interface**
 | Nome | Descrição | Link |
-| ---- | ---- | ---- |
-| Psicologia das cores | Utilza-se a cor roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
-
+| :---- | :---- | :---- |
+| Psicologia das cores | Utilza-se a cor Roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
 
 3. **Metas de Usabilidade**
 
