@@ -60,8 +60,7 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 - Interação : Receber uma notificação e agir conforme vontade.
 - Equipamento : Celular.
 
-- O contexto de uso é: Uma casa, um ambiente confortável com barulhos tradicionais do cotidiano, a pessoa segue com sua rotina normalmente, porém um barulho foi detecado em outro cômodo da casa. A pessoa recebe em seu celular a notificação - "Barulho em QUARTO detectado - Som de objeto quebrando". Assim, ela corre para ver o que aconteceu e se depara com um vaso quebrado do lado de sua cama e seu gato em cima da escrivaninha. Após perceber que tudo está bem e arrumar a ocorrência, ela segue sua rotina novamente.
-
+- O contexto de uso é: Em uma casa aconchegante, onde os sons familiares do cotidiano compunham uma melodia tranquila, a rotina seguia seu curso. De repente, o ritmo foi quebrado não por um som audível, mas por uma vibração no bolso. A tela do celular iluminou-se com um alerta urgente: "Barulho em QUARTO detectado - Som de objeto quebrando". Com o coração acelerado, a pessoa correu em direção ao quarto, imaginando o pior. Ao abrir a porta, a tensão se dissipou instantaneamente. Ao lado da cama, os cacos de um vaso espalhados pelo chão; sobre a escrivaninha, o gato observava a cena com a indiferença típica dos felinos. Após um suspiro de alívio e uma rápida limpeza, a ordem foi restaurada e a vida voltou ao seu ritmo normal.
 
 
 ## Resumo
@@ -116,43 +115,33 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Análise de concorrência
 
 **1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.**
-   - Positivo Casa Inteligente
-   - Amazon Alexa
-   - Start Life
-   - LG Thinq
-   - Philips Hue
-   - Tuya
+   - O mercado é liderado por grandes ecossistemas e marcas estabelecidas, nomeadamente: Amazon Alexa, LG ThinQ e Philips Hue.
    
 **2. Colete informações sobre os concorrentes selecionados.**
-   - Todos estão envolvidos no contexto de IoT, conectividade com hardware, software e ambiente, maioria possuem as mesmas características padrões do mercado e funcionalidades parecidas para cada tipo de dispositivo.
+   - Todas as empresas listadas operam dentro do espectro da Internet das Coisas (IoT), integrando hardware, software e conectividade ambiental. Nota-se uma padronização de mercado, onde a maioria compartilha características essenciais e funcionalidades similares para cada categoria de dispositivo.
      
 **3. Analise as características e funcionalidades dos concorrentes.**
-   - Hardware + cloud: melhor captação e cobertura (sensores dedicados), porém custo e necessidade de configuração/emparelhamento;
-   - Apps treináveis: forte personalização (o usuário registra sons), mas geralmente rodam no smartphone → limitações de captura/ruído e consumo de bateria.
+   - **Soluções de Hardware + Cloud:** Destacam-se pela qualidade superior de captação e cobertura através de sensores dedicados, porém apresentam custos mais elevados e exigem processos de configuração e emparelhamento.;
+   - **Aplicativos Treináveis:** O foco é a personalização (o usuário grava os sons), contudo, por dependerem do hardware do smartphone, enfrentam limitações na captação de áudio/ruído e geram alto consumo de bateria.
 
 **4. Avalie a experiência do usuário (UX).**
-   - Avaliações dos usuários do aplicativo Positivo Casa Inteligente: "Prático","Experiência excelente","Lâmpada pisca muito para emparelhar","Aplicativo é lento","Não funciona em paisagem no tablet"
+   - Com base no feedback a positivo, a experiência é polarizada: elogios à praticidade e usabilidade geral contrastam com críticas técnicas, incluindo lentidão do sistema, incompatibilidade do layout paisagem em tablets e o incômodo piscar das lâmpadas durante a conexão.
 
 **5. Examine os preços e modelos de negócio.**
    - Variação de R$60,00 até R$300,00 dependendo de qual dispositivo o usuário compra. 
 
 **6. Pesquisa de satisfação do cliente e opiniões.**
-   - Avaliações dos usuários do aplicativo Positivo Casa Inteligente: "Prático","Experiência excelente","Lâmpada pisca muito para emparelhar","Aplicativo é lento","Não funciona em paisagem no tablet"
+   - As opiniões sobre a solução da Positivo reforçam a percepção de ser um sistema prático, mas com falhas de desempenho (lentidão) e usabilidade (ausência de modo paisagem em tablets e feedback visual excessivo no emparelhamento).
 
 **7. Identifique padrões e tendências no mercado.**
-   - Tendência para modelos específicos de "objetos inteligentes", como campainha inteligente, ou fechadura inteligente
-   - Navegação no estilo BottomNavigation
-   - Tela principal com os dispositivos aparecendo de forma de cards
+   - Crescente foco em dispositivos de segurança específicos, como campainhas e fechaduras inteligentes.
 
 **8. Elabore relatórios e sumarize os resultados.**
-   - Apps puramente móveis: alto poder de personalização, baixa robustez em captação.
-   - Hardware dedicado + ML (como a proposta): melhor captação e latência; maior necessidade de configuração inicial.
-   - Uso de YAMNet e filtragem por limiar reduz falsos positivos, mas requer validação extensiva em ambientes reais.
+   - Apps puramente móveis: Oferecem alta personalização, mas carecem de robustez na captação de áudio.
+   - A implementação do modelo YAMNet com filtragem por limiar é eficaz para reduzir falsos positivos, contudo, sua eficácia depende de validação rigorosa em ambientes reais.
 
 **9. Extraia pontos positivos e faça recomendações.**
-   - Pontos positivos da proposta (comparados aos concorrentes): processamento local (latência <1 s), uso de YAMNet (ampla gama de classes), integração com Flutter + Firebase (notificações confiáveis), emparelhamento via BLE para facilitar configuração.
-   - Personalização fácil; Proteção de privacidade; Robustez a ruído; e Foco em UX de configuração.
-
+   - Pontos positivos da proposta (comparados aos concorrentes): várias classes para classificação de sons (YAMNet) e facilidade de setup via Bluetooth Low Energy (BLE).
    
 ### Personas
 **Persona primaira (Maria, 58 anos):**
@@ -278,11 +267,10 @@ Um dispositivo local que identifica sons importantes dentro de casa e envia noti
 ## Questões de Refinamento
 - Evento; ator; ambiente; objetivo
 
-Atualmente, não há perguntas para refinamento sobre esses elementos
+Sem questões
 
 - Planejamento - ação - avaliação
 
-Como os atores alcançam o objetivo atualmente? Como gostariam de fazê-lo?
 ## Refinamento do Cenário Análise/Problema
 
 Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, sempre anda com seu celular para recer notificações do aplicativo Hear's Sound, assim não perde timers do micro-ondas, campainha, alarmes e até o choro de um bebê, que a avisa sobre os sons importantes dentro de sua casa.
@@ -293,31 +281,26 @@ Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, s
  - Cadastro de um Hardware
 
 1) HTA
-<img width="651" height="321" alt="HTA" src="https://github.com/user-attachments/assets/b1776df4-926d-4421-83d7-b914b7aefd92" />
-
+<img width="291" height="351" alt="HTA" src="https://github.com/user-attachments/assets/2db918b4-8264-4f7c-b673-0afe0e4080c5" />
 
 2) GOMS
-Goal 0: Cadastrar um Hardware
-	Goal 1: Ir para tela cadastro
-		op 1: clicar no ícone (+)
-	Goal 2: Informar dados do Wi-Fi
-		Method 1: Dados previamente informados
-			(Rule: o Wi-Fi já foi informado previamente pelo usuário e salvo no sistema)
-		Method 2: Wi-Fi ainda não informado
-			(Rule: o Wi-Fi ainda não foi informado)
-   				Method 2.A Inserindo as informações
-   					(Rule: Usuário insere o nome e senha da rede)
-   						op 2.A.1: clicar em nome da rede    
-						op 2.A.2: digitar em nome da rede
-   						op 2.A.3: clicar em senha
-   						op 2.A.4: digitar senha
-   						op 2.A.5: clicar no botão vincular
-	Goal 3: Escolher hardware
-		op 1: Clicar no dispositivo encontrado na rede
+Goal 0: Cadastrar novo usuário
+	Method 0.1: Já foi cadastrado
+		Sel.R: O usuário já existe, o usuário deve inserir as suas informações na tela de login
+	Method 1: Usuário novo
+		Op 0: Digitar o e-mail no campo "e-mail"
+		Op 1: Digital a senha no campo "senha"
+		Op 2: Digitar a senha no campo "Digite a senha novamente"
+Goal 1: Entrar com o novo cadastro
+		Method 1: Digitando as informações
+			Op 0: Digitar o e-mail no campo "e-mail"
+			Op 1: Digital a senha no campo "senha"
+
+	
    
 4) CTT
+<img width="691" height="411" alt="CTT" src="https://github.com/user-attachments/assets/69cc876b-9a3d-43cf-a45c-fb537aaebe0e" />
 
-<img width="711" height="401" alt="CTT" src="https://github.com/user-attachments/assets/f5229411-a7e7-4307-97b5-05ac1aa1beab" />
 
 # **Entrega 6**
 
@@ -348,39 +331,38 @@ Goal 0: Cadastrar um Hardware
 # **Entrega 7**
 
 ## O quê coletar: 
-++ Idade;
-++ grau de surdez;
-++ se mora com outra pessoa com deficiência auditiva;
-++ Dificuldades atuais dentro de casa; 
-++ Como é feita a solução destes problemas 
+- Idade;
+- grau de surdez;
+- se mora com outra pessoa com deficiência auditiva;
+- Dificuldades atuais dentro de casa;
+-  Como é feita a solução destes problemas 
 ## De quem coletar:
-++ Pessoas com deficiência auditiva que buscam independência e segurança dentro de casa
+-  Pessoas com deficiência auditiva que buscam independência e segurança dentro de casa
 ## Ferramentas de coleta: 
-++ Formulário (![Formulário]([https://doi.org/10.1145/3290605.3300324](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)) 
-++ Questionário de perguntas/dúvidas dos deficientes auditivos 
-++ Estudos de casos já existentes sobre o projeto (![Exploring sound awareness in the home for people who are deaf or hard of hearing](https://doi.org/10.1145/3290605.3300324) 
+-  Formulário (![Formulário]([https://doi.org/10.1145/3290605.3300324](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header))
+-  Questionário de perguntas/dúvidas dos deficientes auditivos 
+-  Estudos de casos já existentes sobre o projeto (![Exploring sound awareness in the home for people who are deaf or hard of hearing](https://doi.org/10.1145/3290605.3300324) 
 
 
 # **Entrega 8**
 ## Ciclo de vida de engenharia de usabilidade
 
-1. Características da plataforma
+1. **Características da Plataforma**  
+   
+
 | Característica | Descrição |
 | :---- | :---- |
-| Descrição do Produto| Hardware capaz de detectar e identificar um som ambiente integrado com um software que notifcará a pessoa do evento ocorrido |
-| Lista de  Capacidades da Plataforma | Possibilidade de usar em qualquer lugar |
-| Lsita de Restrições da Plataforma | Dependência de Internet - Tamanho de tela - Muitas notificações seguidas|
+| Descrição do sistema | Detecção e identificação de eventos sonoros dentro de casa com notificação par o aplicativo do usuário. |
+| LISTA DE Capacidades da Plataforma (com explicação) | Utilização do hardware somente dentro de espaços fechados para a identificação de som |
+| LISTA DE Restrições da Plataforma (com explicação) | Dependência de Internet para o seu funcionamento contínuo |
+
+   
 
 2. Princípios gerais do projeto
 **Pilar da Interface**
 | Nome | Descrição | Link |
-| :---- | :---- | :---- |
-| Psicologia das cores | Utilza-se a cor Roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
-| Estratégia da tipografia | Urbanist é uma fonte sans-serif geométrica de baixo contraste, inspirada na tipografia e no design modernistas | (https://firmorama.com/uso-estrategico-da-tipografia-como-meio-de-transmitir-mensagens-e-a-personalidade-da-marca) |
-| Logo Invertido | A variação do logotipo é a arte de reorganizar seu logotipo principal, para que funcione em várias colocações | (https://www.tailorbrands.com/pt-br/blog/variacoes-de-logotipo) |
-
-
-![Patterns](https://github.com/Guilo-s-Community/Interface-Humano-Computador-Guilherme/blob/main/images/imagem_2025-10-12_143807226.png?raw=true)
+| ---- | ---- | ---- |
+| Psicologia das cores | Utilza-se a cor roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
 
 
 3. **Metas de Usabilidade**
@@ -395,10 +377,10 @@ Goal 0: Cadastrar um Hardware
 | Metas | Porcentagem | Justificativa |
 | ----- | :---- | :---- |
 | Facilidade de aprendizado | 10% | Só há a necessidade de aprender se for a primeira vez de uso em um aplicativo de Smart Home, Guilo's Sound segue a maioria dos padrões de mercado |
-| Facilidade de memorização | 10% | Pouca taxa de memorização, apenas em algum passo mais importante, uma dificuldade do usuário ou memorizar a solução de algum erro específico|
-| Eficiência | 30% | Importante passo para não exigir muito tempo  e dúvidas do usuário  |
-| Eficácia | 30% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
-| Satisfação | 20% | Usuário deve se sentir seguro com o aplicativo, não gerar dúvidas e passos incompletos para ter o retorno positivo dele  |
+| Facilidade de memorização | 0% | Nenhuma necessidade de memorização. |
+| Eficiência | 40% | Importante para que o usuário possa reagir ao evento de som notificado |
+| Eficácia | 20% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
+| Satisfação | 30% | Usuário deve se sentir seguro e confiança no aplicativo, tendo certeza que o evento de som notificado foi verídico. |
 | **Total** | **100%** | Porcentagem |
 
 
@@ -412,18 +394,18 @@ Dona Rosa prepara o almoço e programa o micro-ondas. Ela senta na sala e cochil
 Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da campainha e envia ao telefone de Rosa um alerta visual e vibratório indicando “Campainha — Entrada”**, ela atende sem precisar depender de bater na porta ou da filha. Já à noite, quando uma fritura começa a queimar, o alarme de fumaça dispara e o **dispositivo envia um alerta de emergência persistente e vibração forte ao celular**. Rosa percebe o aviso e sai do apartamento em segurança. Durante a visita da filha e do neto, **o aparelho identifica o choro do bebê no corredor e notifica Rosa imediatamente, permitindo que ela vá ajudar o netinho sem esperar ser chamada.**
 
 
-2. Design Centrado na Comunicação
+2. Design Centrado na Comunicação (DCC)
 
 **Nome do Cenário: Cadastro de Usuário no aplicativo**
 
 | tópico \> subtópico (diálogo) | falas e signos |
 | :---- | :---- |
-| cadastrar no aplicativo | U: Preciso me cadastrar no aplicativo|
-| \>informar dados do usuário  | D: Qual é o **e-mail** e **senha** de cadastro? U: Quero cadastrar meu **e-mail** principal e minha **senha** padrão|
+| cadastrar no aplicativo | U: Preciso me cadastrar no aplicativo |
+| informar dados do usuário  | D: Qual é o **e-mail** e **senha** de cadastro? U: Quero cadastrar meu **e-mail** principal e minha **senha** padrão|
 | restrições dos dados | D: Para realizar o cadastro, você deve informar um **e-mail** válido que aceitamos e uma **senha** que cumpra os requisitos do nosso aplicativo U: Ok, seguirei os padrões do seu aplicativo  |
 | cadastrar dados do usuário | D: Vi que você informou uma **senha de confirmação** diferente da anterior, poderia colocar as duas **senhas** iguais? U: Verdade, escrevi errado no **campo de confirmação**!  |
 | cadastrar dados do usuário | D: Agora sim, seu cadastro foi realizado. U: Que bom! |
-| mensagem | D: Se preferir, você pode entrar no aplicativo agora ou posteriormente. U: Entrarei agora!|
+| mensagem | D: Se preferir, você pode entrar no aplicativo agora ou posteriormente. U: Entrarei posteriormente|
 
 
 # Entrega 10 
@@ -442,17 +424,18 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 | **Letra** | **Descrição / Preenchimento** |
 |----------|-------------------------------|
 | **D – Determinar os objetivos da avaliação** | Avaliar se os usuários conseguem se cadastrar sem dificuldades no aplicativo; verificar se a interface é acessível para pessoas surdas; medir se o fluxo evita erros e reduz esforço cognitivo. |
-| **E – Explorar perguntas a serem respondidas** | - O usuário entende como inserir os dados login (e=mail e senha)?<br> - Ele compreende os textos presentes no aplicativo?<br> - O usuário percebe claramente feedbacks<br> - O sistema passa sensação de segurança? |
-| **C – Escolher métodos de avaliação** | Avaliação heurística, teste de usabilidade com observação, entrevistas rápidas pós-teste, análise de tarefas e coleta de métricas (tempo, erros, cliques). |
-| **I – Identificar usuários** | Usuários primários: pessoas surdas.<br> Usuários secundários: familiares que configuram dispositivos. |
-| **D – Decidir questões práticas** | Local: teste no próprio celular dos avaliados ou ambiente controlado. |
-| **E – Avaliar, interpretar e apresentar os dados** | A análise deve considerar: facilidade de uso, clareza visual, erros encontrados, expectativas dos usuários e sugestões. Resultados devem ser categorizados em eficiência, eficácia e satisfação, com gráficos e anotações qualitativas. |
+| **E – Explorar perguntas a serem respondidas** | - O usuário entende como deve utilizar o sistema?<br> - Ele compreende os textos presentes no aplicativo?<br> - O usuário percebe as notificações do aplicativo? |
+| **C – Escolher métodos de avaliação** | Avaliação heurística, teste de usabilidade com observação, entrevistas pós-teste, análise de tarefas e coleta de métricas dos usuários (tempo, erros, cliques). |
+| **I – Identificar usuários** | Usuários primários: pessoas surdas |
+| **D – Decidir questões práticas** | Local: teste no próprio celular dos avaliados e dentro de um ambiente controlado. |
+| **E – Avaliar, interpretar e apresentar os dados** | A análise deve considerar: facilidade de uso, erros encontrados, expectativas dos usuários e sugestões. Resultados devem ser categorizados em eficiência, eficácia e satisfação. |
 
 2. Lista de instrumentos
+    2.1 Contrato de consentimento à pesquisa
 
-	2.1 Questionários
+	2.2 Questionários
 
-	2.2 Formulário de avalisação heurística
+	2.3 Formulário de avalisação heurística
 
-	2.3 Tabela de observações
+	2.4 Tabela de observações
 
