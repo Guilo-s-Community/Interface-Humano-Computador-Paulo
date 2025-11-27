@@ -339,7 +339,7 @@ Goal 1: Entrar com o novo cadastro
 ## De quem coletar:
 -  Pessoas com deficiência auditiva que buscam independência e segurança dentro de casa
 ## Ferramentas de coleta: 
--  Formulário (![Formulário]([https://doi.org/10.1145/3290605.3300324](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header))
+-  Formulário (![Formulário]([https://doi.org/10.1145/3290605.3300324](https://docs.google.com/forms/d/e/1FAIpQLSeGRXnJkaUiu8sKENSzcnSS1H-NjFLpNw5YLdTkTCqo30dPUA/viewform?usp=header)))
 -  Questionário de perguntas/dúvidas dos deficientes auditivos 
 -  Estudos de casos já existentes sobre o projeto (![Exploring sound awareness in the home for people who are deaf or hard of hearing](https://doi.org/10.1145/3290605.3300324) 
 
