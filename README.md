@@ -60,7 +60,7 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 - Interação : Receber uma notificação e agir conforme vontade.
 - Equipamento : Celular.
 
-- O contexto de uso é: Em uma casa aconchegante, onde os sons familiares do cotidiano compunham uma melodia tranquila, a rotina seguia seu curso. De repente, o ritmo foi quebrado não por um som audível, mas por uma vibração no bolso. A tela do celular iluminou-se com um alerta urgente: "Barulho em QUARTO detectado - Som de objeto quebrando". Com o coração acelerado, a pessoa correu em direção ao quarto, imaginando o pior. Ao abrir a porta, a tensão se dissipou instantaneamente. Ao lado da cama, os cacos de um vaso espalhados pelo chão; sobre a escrivaninha, o gato observava a cena com a indiferença típica dos felinos. Após um suspiro de alívio e uma rápida limpeza, a ordem foi restaurada e a vida voltou ao seu ritmo normal.
+- O contexto de uso é: Em uma casa aconchegante, onde os sons familiares do cotidiano compunham uma melodia tranquila, a rotina seguia seu curso. De repente, o ritmo foi quebrado não por um som audível, mas por uma vibração no bolso. A tela do celular iluminou-se com um alerta urgente:(removido). Com o coração acelerado, a pessoa correu em direção ao quarto, imaginando o pior. Ao abrir a porta, a tensão se dissipou instantaneamente. (removido)
 
 
 ## Resumo
@@ -115,23 +115,23 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Análise de concorrência
 
 **1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.**
-   - O mercado é liderado por grandes ecossistemas e marcas estabelecidas, nomeadamente: Amazon Alexa, LG ThinQ e Philips Hue.
+   (removido)
    
 **2. Colete informações sobre os concorrentes selecionados.**
-   - Todas as empresas listadas operam dentro do espectro da Internet das Coisas (IoT), integrando hardware, software e conectividade ambiental. Nota-se uma padronização de mercado, onde a maioria compartilha características essenciais e funcionalidades similares para cada categoria de dispositivo.
+  (removido)
      
 **3. Analise as características e funcionalidades dos concorrentes.**
    - **Soluções de Hardware + Cloud:** Destacam-se pela qualidade superior de captação e cobertura através de sensores dedicados, porém apresentam custos mais elevados e exigem processos de configuração e emparelhamento.;
    - **Aplicativos Treináveis:** O foco é a personalização (o usuário grava os sons), contudo, por dependerem do hardware do smartphone, enfrentam limitações na captação de áudio/ruído e geram alto consumo de bateria.
 
 **4. Avalie a experiência do usuário (UX).**
-   - Com base no feedback a positivo, a experiência é polarizada: elogios à praticidade e usabilidade geral contrastam com críticas técnicas, incluindo lentidão do sistema, incompatibilidade do layout paisagem em tablets e o incômodo piscar das lâmpadas durante a conexão.
+   (removido)
 
 **5. Examine os preços e modelos de negócio.**
    - Variação de R$60,00 até R$300,00 dependendo de qual dispositivo o usuário compra. 
 
 **6. Pesquisa de satisfação do cliente e opiniões.**
-   - As opiniões sobre a solução da Positivo reforçam a percepção de ser um sistema prático, mas com falhas de desempenho (lentidão) e usabilidade (ausência de modo paisagem em tablets e feedback visual excessivo no emparelhamento).
+   (removido)
 
 **7. Identifique padrões e tendências no mercado.**
    - Crescente foco em dispositivos de segurança específicos, como campainhas e fechaduras inteligentes.
@@ -265,11 +265,7 @@ Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, p
 Um dispositivo local que identifica sons importantes dentro de casa e envia notificações visuais e por vibração ao celular resolveria esses problemas: evitaria riscos (alarme de incêndio), garantiria que receba entregas e visitas, e devolveria autonomia sem configurações complexas
 
 ## Questões de Refinamento
-- Evento; ator; ambiente; objetivo
-
-Sem questões
-
-- Planejamento - ação - avaliação
+(removido)
 
 ## Refinamento do Cenário Análise/Problema
 
@@ -360,7 +356,7 @@ Goal 1: Entrar com o novo cadastro
 **Pilar da Interface**
 | Nome | Descrição | Link |
 | :---- | :---- | :---- |
-| Psicologia das cores | Utilza-se a cor Roxa por representar magia, da fé, do abstrato, da nobreza e da sabedoria | (https://www.serasaexperian.com.br/conteudos/psicologia-das-cores-no-marketing-digital) |
+(removido)
 
 3. **Metas de Usabilidade**
 
@@ -373,11 +369,11 @@ Goal 1: Entrar com o novo cadastro
 
 | Metas | Porcentagem | Justificativa |
 | ----- | :---- | :---- |
-| Facilidade de aprendizado | 10% | Só há a necessidade de aprender se for a primeira vez de uso em um aplicativo de Smart Home, Guilo's Sound segue a maioria dos padrões de mercado |
+| Facilidade de aprendizado | 10% | (removido) |
 | Facilidade de memorização | 0% | Nenhuma necessidade de memorização. |
 | Eficiência | 40% | Importante para que o usuário possa reagir ao evento de som notificado |
-| Eficácia | 20% | Importante passo do para permitir que o usuário siga o fluxo do aplicativo e cumpra todas as tarefas sem erro |
-| Satisfação | 30% | Usuário deve se sentir seguro e confiança no aplicativo, tendo certeza que o evento de som notificado foi verídico. |
+| Eficácia | 20% | (removido) |
+| Satisfação | 30% | (removido) |
 | **Total** | **100%** | Porcentagem |
 
 
@@ -393,21 +389,12 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 
 2. Design Centrado na Comunicação (DCC)
 
-**Nome do Cenário: Cadastro de Usuário no aplicativo**
-
-| tópico \> subtópico (diálogo) | falas e signos |
-| :---- | :---- |
-| cadastrar no aplicativo | U: Preciso me cadastrar no aplicativo |
-| informar dados do usuário  | D: Qual é o **e-mail** e **senha** de cadastro? U: Quero cadastrar meu **e-mail** principal e minha **senha** padrão|
-| restrições dos dados | D: Para realizar o cadastro, você deve informar um **e-mail** válido que aceitamos e uma **senha** que cumpra os requisitos do nosso aplicativo U: Ok, seguirei os padrões do seu aplicativo  |
-| cadastrar dados do usuário | D: Vi que você informou uma **senha de confirmação** diferente da anterior, poderia colocar as duas **senhas** iguais? U: Verdade, escrevi errado no **campo de confirmação**!  |
-| cadastrar dados do usuário | D: Agora sim, seu cadastro foi realizado. U: Que bom! |
-| mensagem | D: Se preferir, você pode entrar no aplicativo agora ou posteriormente. U: Entrarei posteriormente|
+(removido)
 
 
 # Entrega 10 
 ## MOLIC
-<img width="856" height="497" alt="MOLIC" src="https://github.com/user-attachments/assets/664f2baa-5b37-4635-9b8c-3a90a9940de2" />
+(removido)
 
 # Entrega 11
 ## FIGMA 
@@ -420,12 +407,12 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 
 | **Letra** | **Descrição / Preenchimento** |
 |----------|-------------------------------|
-| **D – Determinar os objetivos da avaliação** | Avaliar se os usuários conseguem se cadastrar sem dificuldades no aplicativo; verificar se a interface é acessível para pessoas surdas; medir se o fluxo evita erros e reduz esforço cognitivo. |
-| **E – Explorar perguntas a serem respondidas** | - O usuário entende como deve utilizar o sistema?<br> - Ele compreende os textos presentes no aplicativo?<br> - O usuário percebe as notificações do aplicativo? |
-| **C – Escolher métodos de avaliação** | Avaliação heurística, teste de usabilidade com observação, entrevistas pós-teste, análise de tarefas e coleta de métricas dos usuários (tempo, erros, cliques). |
-| **I – Identificar usuários** | Usuários primários: pessoas surdas |
-| **D – Decidir questões práticas** | Local: teste no próprio celular dos avaliados e dentro de um ambiente controlado. |
-| **E – Avaliar, interpretar e apresentar os dados** | A análise deve considerar: facilidade de uso, erros encontrados, expectativas dos usuários e sugestões. Resultados devem ser categorizados em eficiência, eficácia e satisfação. |
+| **D – Determinar os objetivos da avaliação** | (removido) |
+| **E – Explorar perguntas a serem respondidas** | (removido) |
+| **C – Escolher métodos de avaliação** | (removido) |
+| **I – Identificar usuários** | (removido) |
+| **D – Decidir questões práticas** | (removido) |
+| **E – Avaliar, interpretar e apresentar os dados** |(removido) |
 
 2. Lista de instrumentos
     2.1 Contrato de consentimento à pesquisa
