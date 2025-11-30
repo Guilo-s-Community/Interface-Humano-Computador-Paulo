@@ -60,7 +60,7 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 - Interação : Receber uma notificação e agir conforme vontade.
 - Equipamento : Celular.
 
-- O contexto de uso é: Em uma casa aconchegante, onde os sons familiares do cotidiano compunham uma melodia tranquila, a rotina seguia seu curso. De repente, o ritmo foi quebrado não por um som audível, mas por uma vibração no bolso. A tela do celular iluminou-se com um alerta urgente:(removido). Com o coração acelerado, a pessoa correu em direção ao quarto, imaginando o pior. Ao abrir a porta, a tensão se dissipou instantaneamente. (removido)
+- O contexto de uso é: Em uma casa aconchegante, onde os sons familiares do cotidiano compunham uma melodia tranquila, a rotina seguia seu curso. De repente, o ritmo foi quebrado não por um som audível, mas por uma vibração no bolso. A tela do celular iluminou-se com um alerta urgente: Som de objeto quebrando em QUARTO. Com o coração acelerado, a pessoa correu em direção ao quarto, imaginando o pior. Ao abrir a porta, a tensão se dissipou instantaneamente. Ao lado da cama, os cacos de um vaso espalhados pelo chão; sobre a escrivaninha com o seu gato ao lado olhando para os cacos. Após um suspiro de alívio e uma rápida limpeza, a ordem foi restaurada e a vida voltou ao seu ritmo normal.
 
 
 ## Resumo
@@ -115,23 +115,23 @@ Este projeto se baseia no Trabalho de Conclusão de Curso (TCC) entitulado DETEC
 ## Análise de concorrência
 
 **1. Identifique os principais concorrentes ou softwares mais utilizados pelo seu público-alvo.**
-   (removido)
+   - Google Sound Notifications, Alexa
    
 **2. Colete informações sobre os concorrentes selecionados.**
-  (removido)
+  2.1. Google Sound Notifications: Recurso nativo do Android (parte do pacote “Acessibilidade”) que detecta eventos sonoros em tempo real, usando o microfone do smartphone.
+  2.2. Alexa: Integra hardware e software
      
 **3. Analise as características e funcionalidades dos concorrentes.**
-   - **Soluções de Hardware + Cloud:** Destacam-se pela qualidade superior de captação e cobertura através de sensores dedicados, porém apresentam custos mais elevados e exigem processos de configuração e emparelhamento.;
-   - **Aplicativos Treináveis:** O foco é a personalização (o usuário grava os sons), contudo, por dependerem do hardware do smartphone, enfrentam limitações na captação de áudio/ruído e geram alto consumo de bateria.
-
+   3.1. Google Sound Notifications permite detectar sons do ambiente (campainha, bebê chorando, água correndo, latido de cachorro, eletrodomésticos, alarme de fumaça etc.) via microfone do smartphone em tempo real. Depende do celular estar no local correto para captar o som: se estiver fora da casa/quarto, ou em bolso/mochila, a detecção pode falhar.
+   3.2. Alexa, por meio de dispositivos Echo, pode usar microfones embutidos para “ouvir” sons em casa — como vidro quebrando, alarme de fumaça/CO, barulho de porta, passos, conversas, atividades variadas. Não há garantia de que a notificação será suficiente para uma pessoa surda perceber por ser notificações auditivas.
 **4. Avalie a experiência do usuário (UX).**
-   (removido)
+	- Interface simples e direta, feedback instantâneo, muita dependência do celular ( autonomia limitada)
 
 **5. Examine os preços e modelos de negócio.**
    - Variação de R$60,00 até R$300,00 dependendo de qual dispositivo o usuário compra. 
 
 **6. Pesquisa de satisfação do cliente e opiniões.**
-   (removido)
+   - As opiniões dos usuários reforçam a necessidade de uma integração do aplicativo google sound notification com um hardware para captar sons, sem necessitar do microfone do celular.
 
 **7. Identifique padrões e tendências no mercado.**
    - Crescente foco em dispositivos de segurança específicos, como campainhas e fechaduras inteligentes.
@@ -265,7 +265,11 @@ Dona Rosa, aposentada que mora sozinha e tem perda auditiva moderada a severa, p
 Um dispositivo local que identifica sons importantes dentro de casa e envia notificações visuais e por vibração ao celular resolveria esses problemas: evitaria riscos (alarme de incêndio), garantiria que receba entregas e visitas, e devolveria autonomia sem configurações complexas
 
 ## Questões de Refinamento
-(removido)
+- Evento; ator; ambiente; objetivo
+
+Sem questões
+
+- Planejamento - ação - avaliação
 
 ## Refinamento do Cenário Análise/Problema
 
@@ -354,9 +358,11 @@ Goal 1: Entrar com o novo cadastro
 
    
 **Pilar da Interface**
-| Nome | Descrição | Link |
-| :---- | :---- | :---- |
-(removido)
+| Nome | Descrição | 
+| :---- | :---- |
+| Confiabilidade Percebida | O usuário precisa sentir que pode confiar na detecção e nos avisos, especialmente porque se trata de segurança doméstica. |
+| Simplicidade e Baixa Carga Cognitiva | A interface deve permitir que qualquer pessoa, independentemente de familiaridade com tecnologia, use e configure o sistema rapidamente. |
+| Acessibilidade Comunicacional Total | O sistema deve comunicar tudo por meio visual e tátil, já que o público-alvo é composto por pessoas surdas, com diferentes níveis de alfabetização e preferências linguísticas. |
 
 3. **Metas de Usabilidade**
 
@@ -369,11 +375,11 @@ Goal 1: Entrar com o novo cadastro
 
 | Metas | Porcentagem | Justificativa |
 | ----- | :---- | :---- |
-| Facilidade de aprendizado | 10% | (removido) |
+| Eficácia | 30% | O modelo YAMNet deve classificar o som com um score (nível de confiança) superior a porcentagem escolhida para que a notificação seja gerada. |
 | Facilidade de memorização | 0% | Nenhuma necessidade de memorização. |
 | Eficiência | 40% | Importante para que o usuário possa reagir ao evento de som notificado |
-| Eficácia | 20% | (removido) |
-| Satisfação | 30% | (removido) |
+| Utilidade e Relevância | 20% | Notificar apenas grupos de sons considerados importantes para o contexto residencial, evitando sobrecarga cognitiva com sons irrelevantes. |
+| Aprendizado e Facilidade de Uso | 10% | O processo de vinculação entre o hardware (Raspberry Pi) e o aplicativo deve ser simples e guiado. |
 | **Total** | **100%** | Porcentagem |
 
 
@@ -389,12 +395,17 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 
 2. Design Centrado na Comunicação (DCC)
 
-(removido)
 
+| tópico \> subtópico (diálogo) | falas e signos |
+| :---- | :---- |
+| logar no aplicativo | U: Preciso me logar no aplicativo |
+| informar dados do usuário  | D: Qual é o **e-mail** e **senha** do usuário? U: Quero inserir meu **e-mail** e **senha** já cadastrados no aplicativo |
+| restrições dos dados | D: Para realizar o login, você deve informar um **e-mail** e **senha** que esteja cadastrado no aplicativo U: Ok, vou inserir o meu e-mail e senha já cadastrados no aplicativo |
+| login do usuário | D: Agora sim, seu login foi realizado. U: Que bom! |
 
 # Entrega 10 
 ## MOLIC
-(removido)
+<img width="856" height="497" alt="MOLIC" src="https://github.com/user-attachments/assets/664f2baa-5b37-4635-9b8c-3a90a9940de2" />
 
 # Entrega 11
 ## FIGMA 
@@ -407,12 +418,12 @@ Mais tarde a auxiliar chega e toca a campainha. **O sistema reconhece o toque da
 
 | **Letra** | **Descrição / Preenchimento** |
 |----------|-------------------------------|
-| **D – Determinar os objetivos da avaliação** | (removido) |
-| **E – Explorar perguntas a serem respondidas** | (removido) |
-| **C – Escolher métodos de avaliação** | (removido) |
-| **I – Identificar usuários** | (removido) |
-| **D – Decidir questões práticas** | (removido) |
-| **E – Avaliar, interpretar e apresentar os dados** |(removido) |
+| **D – Determinar os objetivos da avaliação** | O objetivo geral da avaliação foi validar o funcionamento do sistema proposto (integração entre IoT, IA e aplicação móvel) e verificar se ele atende aos requisitos de acessibilidade e desempenho definidos. |
+| **E – Explorar perguntas a serem respondidas** | O modelo YAMNet consegue identificar corretamente os grupos de sons relevantes (sirene, choro, animal, etc.) em um ambiente doméstico? <br> O sistema consegue processar e notificar o evento em menos de 3 segundos (Requisito Não Funcional 1)?  <br> Quais são os sons domésticos que mais impactam a rotina e segurança das pessoas surdas?|
+| **C – Escolher métodos de avaliação** | Utilização de formulário via Google Forms com perguntas quantitativas e qualitativas para entender as necessidades dos usuários |
+| **I – Identificar usuários** | Pessoas surdas que buscam independência dentro de sua residência. |
+| **D – Decidir questões práticas** | O estudo envolveu participantes humanos na fase de levantamento de requisitos, implicando a necessidade de consentimento para o uso das respostas na definição das categorias de som (embora o termo de consentimento específico não esteja detalhado no texto, o anonimato foi garantido). |
+| **E – Avaliar, interpretar e apresentar os dados** | O sistema mostrou alta confiabilidade para sons contínuos (Sirene, Choro, Animal) e menor taxa de acerto para sons curtos (Telefone, Campainha), devido à janela de captura. |
 
 2. Lista de instrumentos
     2.1 Contrato de consentimento à pesquisa
